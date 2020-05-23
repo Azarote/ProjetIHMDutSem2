@@ -9,7 +9,7 @@ Les 2 premiers affichages se font dans 2 widgets (fenêtre ou onglet). Les étap
 
 Contraintes :
 
-utilisation de QT, C++
+Utilisation de QT, C++
 chargement du fichier de recette via une boîte de dialogue (QFileDialog adapté aux fichiers JSON)
 automate QT pour les étapes de réalisation de la recette (QStateMachine)
 documentation obligatoire pour les classes et méthodes, schéma de votre machine à état
