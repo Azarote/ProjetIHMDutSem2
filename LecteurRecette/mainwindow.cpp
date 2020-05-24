@@ -10,7 +10,8 @@ MainWindow::MainWindow(QWidget *parent)
     MenuPrincipal();
     MenuFichier();
     MenuAide();
-        setAcceptDrops(true);
+
+    setAcceptDrops(true);
     connect(this,SIGNAL(cheminFichier(QString)),this,SLOT(Lecteur(QString)));
 }
 void MainWindow::MenuFichier(){
