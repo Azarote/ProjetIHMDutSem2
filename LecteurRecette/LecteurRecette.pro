@@ -29,7 +29,7 @@ HEADERS += \
 FORMS += \
     etapes.ui \
     mainwindow.ui \
-    présentation.ui
+    presentation.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
