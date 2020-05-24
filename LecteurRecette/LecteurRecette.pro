@@ -18,11 +18,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     lecteurjson.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    traitement.cpp
 
 HEADERS += \
     lecteurjson.h \
-    mainwindow.h
+    mainwindow.h \
+    traitement.h
 
 FORMS += \
     mainwindow.ui

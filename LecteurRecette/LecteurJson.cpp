@@ -10,16 +10,9 @@ void LecteurJson::Lecteur(QString nomFichier ){
     QFile fichier(nomFichier);
     QJsonParseError error;
 
-    //Ouverture du fichier en lecture uniquement
     if(fichier.open(QFile::ReadOnly)) {
-       //Récupération du contenu du fichier
        QByteArray donnees = fichier.readAll();
 
-       //Affiche l'ensemble des données dans le fichier
-       //qDebug() << donnees;
-
-
-       //Interprétation du fichier JSON
        QJsonDocument doc = QJsonDocument::fromJson(donnees, &error);
        if(error.error != QJsonParseError::NoError)
        {
