@@ -21,7 +21,7 @@ void MainWindow::MenuPrincipal(){
     menuBar()->addMenu(fileMenu);
 
     fileMenu->addAction(tr("Ouvrir..."), this, SLOT(Ouvrir()),QKeySequence::Open);
-    fileMenu->addAction(tr("Quitter"), qApp, SLOT(Quitter()),QKeySequence::Quit);
+    fileMenu->addAction(tr("Quitter"), qApp, SLOT(quit()),QKeySequence::Quit);
 }
 
 void MainWindow::Ouvrir(const QString &path)
