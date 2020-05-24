@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setWindowTitle("Lecteur de recettes");//titre de la fenêtre
 }
 
 MainWindow::~MainWindow()
