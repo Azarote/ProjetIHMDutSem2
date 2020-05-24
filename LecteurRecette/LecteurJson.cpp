@@ -7,6 +7,7 @@ LecteurJson::LecteurJson()
 
 void LecteurJson::Lecteur(QString nomFichier ){
 
+
     QFile fichier(nomFichier);
     QJsonParseError error;
 
@@ -20,28 +21,30 @@ void LecteurJson::Lecteur(QString nomFichier ){
        }
        else
        {
-
-           //qDebug() << doc.isObject();
-
            QJsonObject obj=doc.object();
-           //qDebug() << obj;
 
-           qDebug() << "Nom " << (obj.value("name")).toString();
-           qDebug() << "Description : " << (obj.value("description")).toString();
+
+           InfosRecette << (obj.value("name")).toString();
+           InfosRecette << "Description : " << (obj.value("description")).toString();
+           InfosRecette << "Catégorie : " << (obj.value("recipeCategory")).toString();
+           InfosRecette << "Mot Clés : " << (obj.value("keywords")).toString();
+
            QJsonValue val = obj.value("recipeIngredient");
-           //qDebug() << val.isArray();
-
            QJsonArray valArray = val.toArray();
+
            for (auto value: valArray)
-               qDebug() << "ingredient " << value.toString();
+               Ingredients << value.toString();
 
            val = obj.value("recipeInstructions");
            valArray = val.toArray();
            for (auto value: valArray)
-               qDebug() << "instruction " << value.toString();
+               Etapes << "instruction " << value.toString();
 
-           qDebug() << "Total time : " << (obj.value("totalTime")).toString();
-           qDebug() << "URL : " << (obj.value("url")).toString();
+           Temps <<  (obj.value("prepTime")).toString();
+           Temps <<  (obj.value("cookTimes")).toString();
+
+           Temps << "Temps total : " << (obj.value("totalTime")).toString();
+           URL << "URL : " << (obj.value("url")).toString();
 
        }
     }
