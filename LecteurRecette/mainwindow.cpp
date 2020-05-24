@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     MenuPrincipal();
     MenuFichier();
     MenuAide();
-
+        setAcceptDrops(true);
     connect(this,SIGNAL(cheminFichier(QString)),this,SLOT(Lecteur(QString)));
 }
 void MainWindow::MenuFichier(){
@@ -53,3 +53,18 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::dragEnterEvent(QDragEnterEvent *e)
+{
+    if (e->mimeData()->hasUrls()) {
+        e->acceptProposedAction();
+    }
+}
+
+void MainWindow::dropEvent(QDropEvent *e)
+{
+    foreach (const QUrl &url, e->mimeData()->urls()) {
+        QString fileName = url.toLocalFile();
+        //Lecteur(fileName);
+    }
+}

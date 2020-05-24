@@ -14,6 +14,9 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 
+#include <QDropEvent>
+#include <QMimeData>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -33,6 +36,9 @@ private:
     void MenuFichier();
     void MenuAide();
 
+    void dragEnterEvent(QDragEnterEvent*);
+
+    void dropEvent(QDropEvent*);
 
 public slots:
     void Ouvrir(const QString &path = QString());
