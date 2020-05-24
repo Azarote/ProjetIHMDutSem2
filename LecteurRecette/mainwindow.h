@@ -2,7 +2,18 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLabel>
+#include <QFileDialog>
+#include <QFile>
+#include <QLabel>
+#include <QJsonArray>
 #include <QTextEdit>
+#include <QJsonValue>
+#include <QDebug>
+#include <QListView>
+#include <QStringListModel>
+#include <QJsonDocument>
+#include <QJsonObject>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,6 +25,7 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
+     QTextEdit * zonetexte;
     ~MainWindow();
 
 private:
