@@ -34,5 +34,8 @@ private:
 
 public slots:
     void Ouvrir(const QString &path = QString());
+
+signals:
+    void cheminFichier(QString);
 };
 #endif // MAINWINDOW_H

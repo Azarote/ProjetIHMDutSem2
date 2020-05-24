@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     MenuPrincipal();
 
-
+    connect(this,SIGNAL(cheminFichier(QString)),this,SLOT(Lecteur(QString)));
 }
 
 void MainWindow::MenuPrincipal(){
@@ -22,6 +22,8 @@ void MainWindow::MenuPrincipal(){
 
     fileMenu->addAction(tr("Ouvrir..."), this, SLOT(Ouvrir()),QKeySequence::Open);
     fileMenu->addAction(tr("Quitter"), qApp, SLOT(quit()),QKeySequence::Quit);
+
+
 }
 
 void MainWindow::Ouvrir(const QString &path)
@@ -31,10 +33,8 @@ void MainWindow::Ouvrir(const QString &path)
     if (fileName.isNull())
         fileName = QFileDialog::getOpenFileName(this, tr("Ouvrir le fichier"), "", tr("Fichiers JSON (*.json)"));
 
-    if (!fileName.isEmpty())
-    {
-        QFile file(fileName);
-    }
+    if (!fileName.isNull())
+        emit cheminFichier(fileName);
 }
 
 MainWindow::~MainWindow()
