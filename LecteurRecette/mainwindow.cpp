@@ -33,8 +33,6 @@ void MainWindow::MenuAide(){
 void MainWindow::MenuPrincipal(){
 
     setWindowTitle("Lecteur de recettes");
-    zonetexte = new QTextEdit;
-    setCentralWidget(zonetexte);
 
 }
 
@@ -48,6 +46,7 @@ void MainWindow::Ouvrir(const QString &path)
     if (!fileName.isNull())
         emit cheminFichier(fileName);
 }
+
 
 MainWindow::~MainWindow()
 {

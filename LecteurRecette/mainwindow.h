@@ -5,7 +5,6 @@
 #include <QLabel>
 #include <QFileDialog>
 #include <QFile>
-#include <QLabel>
 #include <QJsonArray>
 #include <QTextEdit>
 #include <QJsonValue>
@@ -33,6 +32,7 @@ private:
     void MenuPrincipal();
     void MenuFichier();
     void MenuAide();
+
 
 public slots:
     void Ouvrir(const QString &path = QString());
