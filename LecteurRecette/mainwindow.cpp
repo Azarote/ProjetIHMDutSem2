@@ -12,8 +12,10 @@ MainWindow::MainWindow(QWidget *parent)
     MenuAide();
 
     setAcceptDrops(true);
+    this->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
     connect(this,SIGNAL(cheminFichier(QString)),this,SLOT(Lecteur(QString)));
 }
+
 void MainWindow::MenuFichier(){
 
     QMenu *fileMenu = new QMenu(tr("Fichier"), this);
