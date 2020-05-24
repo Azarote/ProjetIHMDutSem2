@@ -8,21 +8,33 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     MenuPrincipal();
+    MenuFichier();
+    MenuAide();
 
     connect(this,SIGNAL(cheminFichier(QString)),this,SLOT(Lecteur(QString)));
 }
-
-void MainWindow::MenuPrincipal(){
-    setWindowTitle("Lecteur de recettes");
+void MainWindow::MenuFichier(){
 
     QMenu *fileMenu = new QMenu(tr("Fichier"), this);
-    zonetexte = new QTextEdit;
-    setCentralWidget(zonetexte);
+
     menuBar()->addMenu(fileMenu);
 
     fileMenu->addAction(tr("Ouvrir..."), this, SLOT(Ouvrir()),QKeySequence::Open);
     fileMenu->addAction(tr("Quitter"), qApp, SLOT(quit()),QKeySequence::Quit);
+}
 
+void MainWindow::MenuAide(){
+
+   QMenu *HelpMenu = new QMenu(tr("Aide"), this);
+   menuBar()->addMenu(HelpMenu);
+   HelpMenu->addAction(tr("À propos"), this, SLOT(Help()));
+}
+
+void MainWindow::MenuPrincipal(){
+
+    setWindowTitle("Lecteur de recettes");
+    zonetexte = new QTextEdit;
+    setCentralWidget(zonetexte);
 
 }
 
