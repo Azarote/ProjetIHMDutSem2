@@ -30,5 +30,6 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    void MenuPrincipal();
 };
 #endif // MAINWINDOW_H

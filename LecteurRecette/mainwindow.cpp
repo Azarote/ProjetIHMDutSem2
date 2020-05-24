@@ -6,6 +6,13 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    MenuPrincipal();
+
+
+}
+
+void MainWindow::MenuPrincipal(){
     setWindowTitle("Lecteur de recettes");
 
     QMenu *fileMenu = new QMenu(tr("Fichier"), this);
@@ -16,7 +23,6 @@ MainWindow::MainWindow(QWidget *parent)
     fileMenu->addAction(tr("Ouvrir..."), this, SLOT(Ouvrir()),QKeySequence::Open);
     fileMenu->addAction(tr("Quitter"), qApp, SLOT(Quitter()),QKeySequence::Quit);
 }
-
 MainWindow::~MainWindow()
 {
     delete ui;
