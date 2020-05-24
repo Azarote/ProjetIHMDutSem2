@@ -23,6 +23,20 @@ void MainWindow::MenuPrincipal(){
     fileMenu->addAction(tr("Ouvrir..."), this, SLOT(Ouvrir()),QKeySequence::Open);
     fileMenu->addAction(tr("Quitter"), qApp, SLOT(Quitter()),QKeySequence::Quit);
 }
+
+void MainWindow::Ouvrir(const QString &path)
+{
+    QString fileName = path;
+
+    if (fileName.isNull())
+        fileName = QFileDialog::getOpenFileName(this, tr("Ouvrir le fichier"), "", tr("Fichiers JSON (*.json)"));
+
+    if (!fileName.isEmpty())
+    {
+        QFile file(fileName);
+    }
+}
+
 MainWindow::~MainWindow()
 {
     delete ui;

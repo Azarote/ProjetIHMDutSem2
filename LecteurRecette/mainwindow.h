@@ -31,5 +31,8 @@ public:
 private:
     Ui::MainWindow *ui;
     void MenuPrincipal();
+
+public slots:
+    void Ouvrir(const QString &path = QString());
 };
 #endif // MAINWINDOW_H
