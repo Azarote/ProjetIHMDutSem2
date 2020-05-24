@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setWindowTitle("Lecteur de recettes");
+
     QMenu *fileMenu = new QMenu(tr("Fichier"), this);
     zonetexte = new QTextEdit;
     setCentralWidget(zonetexte);
