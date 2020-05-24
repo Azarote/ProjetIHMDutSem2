@@ -27,7 +27,9 @@ HEADERS += \
     traitement.h
 
 FORMS += \
-    mainwindow.ui
+    etapes.ui \
+    mainwindow.ui \
+    présentation.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
