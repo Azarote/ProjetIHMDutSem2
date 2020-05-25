@@ -43,7 +43,6 @@ private:
 
     void dropEvent(QDropEvent*);
 
-    QWidget * WidgetEtape,* WidgetPresentation;
 
 public slots:
     void Ouvrir(const QString &path = QString());

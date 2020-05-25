@@ -15,8 +15,6 @@ MainWindow::MainWindow(QWidget *parent)
     this->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
     connect(this,SIGNAL(cheminFichier(QString)),this,SLOT(Lecteur(QString)));
 
-    WidgetEtape = new QWidget;
-    WidgetPresentation = new QWidget;
 }
 
 void MainWindow::MenuFichier(){
