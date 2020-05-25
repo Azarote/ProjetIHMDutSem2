@@ -32,20 +32,22 @@ void MainWindow::AfficherFenetre()
 
 void MainWindow::AfficherIngredient()
 {
+    presentation.contenuIngredients->clear();
     presentation.contenuIngredients->addItems(Json.getIngredients());
 
 }
 
 void MainWindow::AfficherEtape()
 {
+    etapes.contenuEtapes->clear();
     etapes.contenuEtapes->addItems(Json.getEtapes());
 
 }
 
 void MainWindow::AfficherPresentation()
 {
+    presentation.contenuPresentation->clear();
     presentation.contenuPresentation->addItems(Json.getInfosRecette());
-
 }
 
 void MainWindow::MenuFichier(){
