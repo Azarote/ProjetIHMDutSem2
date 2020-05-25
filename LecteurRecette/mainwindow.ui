@@ -456,7 +456,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="ImageDragNDrop">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -475,7 +475,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="Messagedebienvenue">
+   <widget class="QLabel" name="labelMsgBvn">
     <property name="enabled">
      <bool>true</bool>
     </property>

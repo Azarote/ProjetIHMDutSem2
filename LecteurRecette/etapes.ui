@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>FenetreEtapes</class>
+ <widget class="QWidget" name="FenetreEtapes">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -455,62 +455,196 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QListWidget" name="listWidget">
+  <widget class="QPushButton" name="btnPrecedent">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>50</y>
-     <width>611</width>
-     <height>431</height>
+     <x>95</x>
+     <y>450</y>
+     <width>305</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSuivant">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>450</y>
+     <width>305</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="contenuEtapes">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>20</y>
+     <width>610</width>
+     <height>430</height>
     </rect>
    </property>
   </widget>
-  <widget class="QListWidget" name="listWidget_3">
+  <widget class="QLabel" name="labelTpsCuisson">
    <property name="geometry">
     <rect>
-     <x>410</x>
+     <x>266</x>
+     <y>533</y>
+     <width>267</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Franklin Gothic Demi Cond</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Temps de cuisson</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTpsPreparation">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>533</y>
+     <width>266</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Franklin Gothic Demi Cond</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Temps de préparation</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="Line" name="Separation1">
+   <property name="geometry">
+    <rect>
+     <x>256</x>
      <y>540</y>
-     <width>391</width>
+     <width>20</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="contenuTemps">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>530</y>
+     <width>800</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="contenuURL">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>580</y>
+     <width>800</width>
      <height>20</height>
     </rect>
    </property>
   </widget>
-  <widget class="QListWidget" name="listWidget_2">
+  <widget class="Line" name="Separation2">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>560</y>
-     <width>801</width>
-     <height>51</height>
+     <x>524</x>
+     <y>540</y>
+     <width>20</width>
+     <height>31</height>
     </rect>
    </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QLabel" name="labelTpsTotal">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>480</y>
-     <width>311</width>
-     <height>23</height>
+     <x>534</x>
+     <y>533</y>
+     <width>266</width>
+     <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Franklin Gothic Demi Cond</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <kerning>true</kerning>
+    </font>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>Temps total</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QLabel" name="labelURL">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>480</y>
-     <width>301</width>
-     <height>23</height>
+     <x>0</x>
+     <y>581</y>
+     <width>51</width>
+     <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Franklin Gothic Demi Cond</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>URL :</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <zorder>contenuTemps</zorder>
+  <zorder>btnPrecedent</zorder>
+  <zorder>btnSuivant</zorder>
+  <zorder>contenuEtapes</zorder>
+  <zorder>labelTpsCuisson</zorder>
+  <zorder>labelTpsPreparation</zorder>
+  <zorder>Separation1</zorder>
+  <zorder>Separation2</zorder>
+  <zorder>labelTpsTotal</zorder>
+  <zorder>contenuURL</zorder>
+  <zorder>labelURL</zorder>
  </widget>
  <resources/>
  <connections/>

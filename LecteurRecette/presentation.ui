@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>FenetrePresentation</class>
+ <widget class="QWidget" name="FenetrePresentation">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -455,13 +455,13 @@
   <property name="windowTitle">
    <string>Présentation de la recette</string>
   </property>
-  <widget class="QTabWidget" name="tabWidget">
+  <widget class="QTabWidget" name="Onglets">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>600</height>
+     <height>530</height>
     </rect>
    </property>
    <property name="palette">
@@ -909,46 +909,26 @@
    <property name="currentIndex">
     <number>1</number>
    </property>
-   <widget class="QWidget" name="tab">
+   <widget class="QWidget" name="ongletPresentation">
     <attribute name="title">
      <string>Présentation</string>
     </attribute>
-    <widget class="QListWidget" name="listWidget_9">
+    <widget class="QListWidget" name="contenuPresentation">
      <property name="geometry">
       <rect>
        <x>95</x>
        <y>20</y>
        <width>610</width>
        <height>430</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QListWidget" name="listWidget_7">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>530</y>
-       <width>800</width>
-       <height>50</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QListWidget" name="listWidget_8">
-     <property name="geometry">
-      <rect>
-       <x>400</x>
-       <y>510</y>
-       <width>400</width>
-       <height>20</height>
       </rect>
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="tab_2">
+   <widget class="QWidget" name="ongletIngredients">
     <attribute name="title">
      <string>Ingrédients</string>
     </attribute>
-    <widget class="QListWidget" name="listWidget_4">
+    <widget class="QListWidget" name="contenuIngredients">
      <property name="geometry">
       <rect>
        <x>95</x>
@@ -958,27 +938,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QListWidget" name="listWidget_5">
-     <property name="geometry">
-      <rect>
-       <x>400</x>
-       <y>510</y>
-       <width>400</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QListWidget" name="listWidget_6">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>530</y>
-       <width>800</width>
-       <height>50</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="Messagedebienvenue">
+    <widget class="QLabel" name="msgIngredients">
      <property name="enabled">
       <bool>true</bool>
      </property>
@@ -1013,6 +973,158 @@
     </widget>
    </widget>
   </widget>
+  <widget class="QListWidget" name="contenuTemps">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>530</y>
+     <width>800</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="contenuURL">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>580</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTpsPreparation">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>533</y>
+     <width>266</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Franklin Gothic Demi Cond</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Temps de préparation</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTpsCuisson">
+   <property name="geometry">
+    <rect>
+     <x>266</x>
+     <y>533</y>
+     <width>267</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Franklin Gothic Demi Cond</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Temps de cuisson</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTpsTotal">
+   <property name="geometry">
+    <rect>
+     <x>534</x>
+     <y>533</y>
+     <width>266</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Franklin Gothic Demi Cond</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Temps total</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="Line" name="Separation1">
+   <property name="geometry">
+    <rect>
+     <x>256</x>
+     <y>540</y>
+     <width>20</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="Separation2">
+   <property name="geometry">
+    <rect>
+     <x>524</x>
+     <y>540</y>
+     <width>20</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelURL">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>581</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Franklin Gothic Demi Cond</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>URL :</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>Onglets</zorder>
+  <zorder>contenuTemps</zorder>
+  <zorder>labelTpsPreparation</zorder>
+  <zorder>labelTpsCuisson</zorder>
+  <zorder>labelTpsTotal</zorder>
+  <zorder>Separation1</zorder>
+  <zorder>Separation2</zorder>
+  <zorder>contenuURL</zorder>
+  <zorder>labelURL</zorder>
  </widget>
  <resources/>
  <connections/>
