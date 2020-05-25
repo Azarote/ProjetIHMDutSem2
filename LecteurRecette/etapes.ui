@@ -562,7 +562,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QListView" name="contenuIngredients">
+  <widget class="QListView" name="contenuEtapes">
    <property name="geometry">
     <rect>
      <x>95</x>
@@ -641,7 +641,7 @@
   <zorder>labelTpsPreparation</zorder>
   <zorder>Separation1</zorder>
   <zorder>contenuURL</zorder>
-  <zorder>contenuIngredients</zorder>
+  <zorder>contenuEtapes</zorder>
   <zorder>Separation2</zorder>
   <zorder>labelURL</zorder>
   <zorder>labelTpsTotal</zorder>
