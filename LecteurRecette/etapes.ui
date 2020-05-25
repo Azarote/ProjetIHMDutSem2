@@ -562,16 +562,6 @@
     </rect>
    </property>
   </widget>
-  <widget class="QListView" name="contenuEtapes">
-   <property name="geometry">
-    <rect>
-     <x>95</x>
-     <y>20</y>
-     <width>610</width>
-     <height>430</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="Line" name="Separation2">
    <property name="geometry">
     <rect>
@@ -634,6 +624,16 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QListWidget" name="contenuEtapes">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>20</y>
+     <width>610</width>
+     <height>430</height>
+    </rect>
+   </property>
+  </widget>
   <zorder>contenuTemps</zorder>
   <zorder>btnPrecedent</zorder>
   <zorder>btnSuivant</zorder>
@@ -641,10 +641,10 @@
   <zorder>labelTpsPreparation</zorder>
   <zorder>Separation1</zorder>
   <zorder>contenuURL</zorder>
-  <zorder>contenuEtapes</zorder>
   <zorder>Separation2</zorder>
   <zorder>labelURL</zorder>
   <zorder>labelTpsTotal</zorder>
+  <zorder>contenuEtapes</zorder>
  </widget>
  <resources/>
  <connections/>

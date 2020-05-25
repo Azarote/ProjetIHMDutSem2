@@ -907,13 +907,13 @@
     </palette>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="ongletPresentation">
     <attribute name="title">
      <string>Présentation</string>
     </attribute>
-    <widget class="QListView" name="contenuPresentation">
+    <widget class="QListWidget" name="contenuPresentation">
      <property name="geometry">
       <rect>
        <x>95</x>
