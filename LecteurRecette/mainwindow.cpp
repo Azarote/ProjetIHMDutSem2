@@ -29,6 +29,12 @@ void MainWindow::AfficherFenetre()
     WidgetEtape->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
 }
 
+void MainWindow::AfficherIngredient()
+{
+    presentation.contenuIngredients->addItems();
+
+}
+
 void MainWindow::MenuFichier(){
 
     QMenu *fileMenu = new QMenu(tr("Fichier"), this);

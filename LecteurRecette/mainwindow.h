@@ -34,7 +34,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
      QTextEdit * zonetexte;
      void AfficherFenetre();
-
+     void AfficherEtape();
+     void AfficherPresentation();
+     void AfficherIngredient();
     ~MainWindow();
 
 private:
