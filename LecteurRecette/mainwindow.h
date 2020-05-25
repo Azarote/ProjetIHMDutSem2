@@ -19,6 +19,8 @@
 
 #include "traitement.h"
 #include "lecteurjson.h"
+#include "ui_presentation.h"
+#include "ui_etapes.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -31,10 +33,15 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
      QTextEdit * zonetexte;
+     void AfficherFenetre();
+
     ~MainWindow();
 
 private:
     Ui::MainWindow *ui;
+    Ui::FenetrePresentation presentation;
+    Ui::FenetreEtapes etapes;
+
     void MenuPrincipal();
     void MenuFichier();
     void MenuAide();
@@ -42,6 +49,8 @@ private:
     void dragEnterEvent(QDragEnterEvent*);
 
     void dropEvent(QDropEvent*);
+
+    QWidget * WidgetEtape,* WidgetPresentation;
 
 
 public slots:

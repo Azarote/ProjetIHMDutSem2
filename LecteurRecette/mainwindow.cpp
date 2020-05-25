@@ -15,6 +15,17 @@ MainWindow::MainWindow(QWidget *parent)
     this->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
     connect(this,SIGNAL(cheminFichier(QString)),this,SLOT(Lecteur(QString)));
 
+    WidgetEtape = new QWidget;
+    WidgetPresentation = new QWidget;
+}
+
+void MainWindow::AfficherFenetre()
+{
+    presentation.setupUi(WidgetPresentation);
+    WidgetPresentation->show();
+
+    etapes.setupUi(WidgetEtape);
+    WidgetEtape->show();
 }
 
 void MainWindow::MenuFichier(){
@@ -49,6 +60,8 @@ void MainWindow::Ouvrir(const QString &path)
 
     if (!fileName.isNull())
         emit cheminFichier(fileName);
+
+    AfficherFenetre();
 }
 
 
