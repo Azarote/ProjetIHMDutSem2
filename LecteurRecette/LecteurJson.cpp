@@ -6,6 +6,11 @@ LecteurJson::LecteurJson()
 }
 
 void LecteurJson::Lecteur(QString nomFichier ){
+    InfosRecette.clear();
+    Ingredients.clear();
+    Etapes.clear();
+    Temps.clear();
+    URL.clear();
 
 
     QFile fichier(nomFichier);
@@ -38,7 +43,7 @@ void LecteurJson::Lecteur(QString nomFichier ){
            val = obj.value("recipeInstructions");
            valArray = val.toArray();
            for (auto value: valArray)
-               Etapes << "instruction " << value.toString();
+               Etapes << value.toString();
 
            Temps <<  (obj.value("prepTime")).toString();
            Temps <<  (obj.value("cookTimes")).toString();

@@ -22,6 +22,7 @@ public:
     inline QStringList getTemps(){ return Temps;}
     inline QStringList getIngredients(){ return Ingredients;}
     inline QStringList getEtapes(){ return Etapes;}
+    inline QString getUpdateEtapes(int i){ return Etapes.at(i);}
     inline QStringList getURL(){ return URL;}
 
 };

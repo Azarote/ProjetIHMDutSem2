@@ -13,6 +13,7 @@
 #include <QStringListModel>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QStateMachine>
 
 #include <QDropEvent>
 #include <QMimeData>
@@ -33,6 +34,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
      QTextEdit * zonetexte;
+     void MachineEtats();
+
+
      void AfficherFenetre();
      void AfficherEtape();
      void AfficherPresentation();
@@ -51,6 +55,8 @@ private:
     void MenuAide();
 
     void dragEnterEvent(QDragEnterEvent*);
+
+    QStateMachine *MachineEtapes;
 
     void dropEvent(QDropEvent*);
 

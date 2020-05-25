@@ -88,6 +88,28 @@ void MainWindow::Ouvrir(const QString &path)
     AfficherPresentation();
 }
 
+void MainWindow::MachineEtats()
+{
+    MachineEtapes = new QStateMachine(this);
+    QList<QState*> listeQState;
+    for(int i=0; i<Json.getEtapes().size();i++)
+    {
+      QState *etat = new QState();
+      etat->assignProperty(etapes.contenuEtapes, "text", Json.getUpdateEtapes(i));
+      listeQState.append(etat);
+      MachineEtapes->addState(etat);
+    }
+    for(int i=0; i<Json.getEtapes().size();i++)
+    {
+        if (i!=0)
+            listeQState[i]->addTransition(etapes.btnPrecedent, SIGNAL(clicked()), listeQState[i-1]);
+        if (i!=Json.getEtapes().size()-1)
+            listeQState[i]->addTransition(etapes.btnSuivant, SIGNAL(clicked()), listeQState[i+1]);
+        connect(listeQState[i], SIGNAL(entered()), this, SLOT(AfficherEtapes()));
+    }
+    MachineEtapes->setInitialState(listeQState[0]);
+    MachineEtapes->start();
+}
 
 MainWindow::~MainWindow()
 {
