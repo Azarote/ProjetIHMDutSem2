@@ -38,7 +38,6 @@ public:
 
 
      void AfficherFenetre();
-     void AfficherEtape();
      void AfficherPresentation();
      void AfficherIngredient();
     ~MainWindow();
@@ -65,6 +64,7 @@ private:
 
 public slots:
     void Ouvrir(const QString &path = QString());
+    void AfficherEtape();
 
 signals:
     void cheminFichier(QString);

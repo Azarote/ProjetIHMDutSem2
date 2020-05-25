@@ -37,7 +37,7 @@ void MainWindow::AfficherIngredient()
 
 }
 
-void MainWindow::AfficherEtape()
+void MainWindow::AfficherEtape()//TODO
 {
     etapes.contenuEtapes->clear();
     etapes.contenuEtapes->addItems(Json.getEtapes());
@@ -85,12 +85,12 @@ void MainWindow::Ouvrir(const QString &path)
     Json.Lecteur(fileName);
 
     AfficherFenetre();
+    MachineEtats(); //TODO
     AfficherIngredient();
-    AfficherEtape();
     AfficherPresentation();
 }
 
-void MainWindow::MachineEtats()
+void MainWindow::MachineEtats()         //Marche PAS
 {
     MachineEtapes = new QStateMachine(this);
     QList<QState*> listeQState;
