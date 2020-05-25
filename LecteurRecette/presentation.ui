@@ -907,38 +907,38 @@
     </palette>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
      <string>Présentation</string>
     </attribute>
-    <widget class="QListWidget" name="listWidget">
+    <widget class="QListWidget" name="listWidget_9">
      <property name="geometry">
       <rect>
-       <x>90</x>
+       <x>95</x>
        <y>20</y>
-       <width>611</width>
-       <height>431</height>
+       <width>610</width>
+       <height>430</height>
       </rect>
      </property>
     </widget>
-    <widget class="QListWidget" name="listWidget_2">
+    <widget class="QListWidget" name="listWidget_7">
      <property name="geometry">
       <rect>
        <x>0</x>
        <y>530</y>
-       <width>801</width>
-       <height>51</height>
+       <width>800</width>
+       <height>50</height>
       </rect>
      </property>
     </widget>
-    <widget class="QListWidget" name="listWidget_3">
+    <widget class="QListWidget" name="listWidget_8">
      <property name="geometry">
       <rect>
        <x>400</x>
        <y>510</y>
-       <width>391</width>
+       <width>400</width>
        <height>20</height>
       </rect>
      </property>
@@ -951,10 +951,10 @@
     <widget class="QListWidget" name="listWidget_4">
      <property name="geometry">
       <rect>
-       <x>90</x>
+       <x>95</x>
        <y>20</y>
-       <width>611</width>
-       <height>431</height>
+       <width>610</width>
+       <height>430</height>
       </rect>
      </property>
     </widget>
@@ -963,7 +963,7 @@
       <rect>
        <x>400</x>
        <y>510</y>
-       <width>391</width>
+       <width>400</width>
        <height>20</height>
       </rect>
      </property>
@@ -973,9 +973,42 @@
       <rect>
        <x>0</x>
        <y>530</y>
-       <width>801</width>
-       <height>51</height>
+       <width>800</width>
+       <height>50</height>
       </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Messagedebienvenue">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>20</y>
+       <width>220</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Franklin Gothic Demi Cond</family>
+       <pointsize>31</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Ingrédients</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </widget>
