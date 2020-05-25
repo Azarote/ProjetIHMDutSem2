@@ -23,9 +23,10 @@ void MainWindow::AfficherFenetre()
 {
     presentation.setupUi(WidgetPresentation);
     WidgetPresentation->show();
-
+    WidgetPresentation->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
     etapes.setupUi(WidgetEtape);
     WidgetEtape->show();
+    WidgetEtape->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
 }
 
 void MainWindow::MenuFichier(){
