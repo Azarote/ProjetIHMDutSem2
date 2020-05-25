@@ -108,6 +108,6 @@ void MainWindow::dropEvent(QDropEvent *e)
 {
     foreach (const QUrl &url, e->mimeData()->urls()) {
         QString fileName = url.toLocalFile();
-        cheminFichier(fileName);
+        Ouvrir(fileName);
     }
 }
