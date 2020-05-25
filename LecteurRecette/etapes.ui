@@ -453,7 +453,7 @@
    </palette>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Étapes de réalisation</string>
   </property>
   <widget class="QPushButton" name="btnPrecedent">
    <property name="geometry">

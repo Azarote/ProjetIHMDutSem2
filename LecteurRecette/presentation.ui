@@ -1120,13 +1120,13 @@
   </widget>
   <zorder>contenuURL</zorder>
   <zorder>contenuTemps</zorder>
-  <zorder>Onglets</zorder>
   <zorder>labelTpsPreparation</zorder>
   <zorder>labelTpsCuisson</zorder>
   <zorder>labelTpsTotal</zorder>
   <zorder>Separation1</zorder>
   <zorder>Separation2</zorder>
   <zorder>labelURL</zorder>
+  <zorder>Onglets</zorder>
  </widget>
  <resources/>
  <connections/>
