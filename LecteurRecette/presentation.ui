@@ -961,7 +961,7 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QListView" name="contenuIngredients">
+    <widget class="QListWidget" name="contenuIngredients">
      <property name="geometry">
       <rect>
        <x>95</x>
