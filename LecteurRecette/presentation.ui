@@ -906,10 +906,34 @@
      </disabled>
     </palette>
    </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
    <property name="currentIndex">
     <number>1</number>
    </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="documentMode">
+    <bool>false</bool>
+   </property>
+   <property name="tabsClosable">
+    <bool>false</bool>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="tabBarAutoHide">
+    <bool>false</bool>
+   </property>
    <widget class="QWidget" name="ongletPresentation">
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
     <attribute name="title">
      <string>Présentation</string>
     </attribute>
@@ -925,6 +949,9 @@
     </widget>
    </widget>
    <widget class="QWidget" name="ongletIngredients">
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
     <attribute name="title">
      <string>Ingrédients</string>
     </attribute>
