@@ -17,6 +17,9 @@
 #include <QDropEvent>
 #include <QMimeData>
 
+#include "traitement.h"
+#include "lecteurjson.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
