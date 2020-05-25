@@ -907,13 +907,13 @@
     </palette>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="ongletPresentation">
     <attribute name="title">
      <string>Présentation</string>
     </attribute>
-    <widget class="QListWidget" name="contenuPresentation">
+    <widget class="QListView" name="contenuPresentation">
      <property name="geometry">
       <rect>
        <x>95</x>
@@ -928,16 +928,6 @@
     <attribute name="title">
      <string>Ingrédients</string>
     </attribute>
-    <widget class="QListWidget" name="contenuIngredients">
-     <property name="geometry">
-      <rect>
-       <x>95</x>
-       <y>20</y>
-       <width>610</width>
-       <height>430</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="QLabel" name="msgIngredients">
      <property name="enabled">
       <bool>true</bool>
@@ -971,27 +961,19 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
+    <widget class="QListView" name="contenuIngredients">
+     <property name="geometry">
+      <rect>
+       <x>95</x>
+       <y>20</y>
+       <width>610</width>
+       <height>430</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>contenuIngredients</zorder>
+    <zorder>msgIngredients</zorder>
    </widget>
-  </widget>
-  <widget class="QListWidget" name="contenuTemps">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>530</y>
-     <width>800</width>
-     <height>50</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QListWidget" name="contenuURL">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>580</y>
-     <width>800</width>
-     <height>20</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QLabel" name="labelTpsPreparation">
    <property name="geometry">
@@ -1116,14 +1098,34 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>Onglets</zorder>
+  <widget class="QListView" name="contenuTemps">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>530</y>
+     <width>800</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListView" name="contenuURL">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>580</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>contenuURL</zorder>
   <zorder>contenuTemps</zorder>
+  <zorder>Onglets</zorder>
   <zorder>labelTpsPreparation</zorder>
   <zorder>labelTpsCuisson</zorder>
   <zorder>labelTpsTotal</zorder>
   <zorder>Separation1</zorder>
   <zorder>Separation2</zorder>
-  <zorder>contenuURL</zorder>
   <zorder>labelURL</zorder>
  </widget>
  <resources/>
