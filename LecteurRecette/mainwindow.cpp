@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QtDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -31,7 +32,19 @@ void MainWindow::AfficherFenetre()
 
 void MainWindow::AfficherIngredient()
 {
-    presentation.contenuIngredients->addItems();
+    presentation.contenuIngredients->addItems(Json.getIngredients());
+
+}
+
+void MainWindow::AfficherEtape()
+{
+    etapes.contenuEtapes->addItems(Json.getEtapes());
+
+}
+
+void MainWindow::AfficherPresentation()
+{
+    presentation.contenuPresentation->addItems(Json.getInfosRecette());
 
 }
 
@@ -67,8 +80,12 @@ void MainWindow::Ouvrir(const QString &path)
 
     if (!fileName.isNull())
         emit cheminFichier(fileName);
+    Json.Lecteur(fileName);
 
     AfficherFenetre();
+    AfficherIngredient();
+    AfficherEtape();
+    AfficherPresentation();
 }
 
 

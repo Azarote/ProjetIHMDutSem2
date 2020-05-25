@@ -44,6 +44,8 @@ private:
     Ui::FenetrePresentation presentation;
     Ui::FenetreEtapes etapes;
 
+    LecteurJson Json;
+
     void MenuPrincipal();
     void MenuFichier();
     void MenuAide();
