@@ -41,9 +41,15 @@ void MainWindow::AfficherFenetre()
 
 void MainWindow::AfficherIngredient()
 {
+    //Stylisation du texte
+    QString style = "";
+       style += "QListView { ";
+       style += "font-family: Helvetica;font-size: 12pt;";
+       style += "}";
+    QFont titre("Times New Roman", 15, QFont::Bold);
+    presentation.contenuIngredients->setStyleSheet(style);
     presentation.contenuIngredients->clear();
     presentation.contenuIngredients->addItems(Json.getIngredients());
-
 }
 
 void MainWindow::AfficherEtape()//TODO
@@ -55,7 +61,7 @@ void MainWindow::AfficherEtape()//TODO
 
 void MainWindow::AfficherPresentation()
 {
-    //création du style de texte :
+    //Stylisation du texte
     QString style = "";
        style += "QListView { ";
        style += "font-family: Helvetica;font-size: 15pt;";

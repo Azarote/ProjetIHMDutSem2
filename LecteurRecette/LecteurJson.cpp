@@ -37,8 +37,9 @@ void LecteurJson::Lecteur(QString nomFichier ){
            QJsonValue val = obj.value("recipeIngredient");
            QJsonArray valArray = val.toArray();
 
+           Ingredients << "\n\n";
            for (auto value: valArray)
-               Ingredients << value.toString();
+               Ingredients << "- " + value.toString();
 
            val = obj.value("recipeInstructions");
            valArray = val.toArray();
