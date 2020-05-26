@@ -24,7 +24,7 @@ void MainWindow::Lancementlecture(QString nomFichier)
 {
     Json.Lecteur(nomFichier);
     AfficherFenetre();
-    MachineEtats(); //TODO
+    MachineEtats(); //TODO 
     AfficherIngredient();
     AfficherPresentation();
 }
