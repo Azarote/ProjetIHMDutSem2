@@ -14,10 +14,19 @@ MainWindow::MainWindow(QWidget *parent)
 
     setAcceptDrops(true);
     this->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
-    connect(this,SIGNAL(cheminFichier(QString)),this,SLOT(Lecteur(QString)));
+    connect(this,SIGNAL(cheminFichier(QString)),this,SLOT(Lancementlecture(QString)));
 
     WidgetEtape = new QWidget;
     WidgetPresentation = new QWidget;
+}
+
+void MainWindow::Lancementlecture(QString nomFichier)
+{
+    Json.Lecteur(nomFichier);
+    AfficherFenetre();
+    MachineEtats(); //TODO
+    AfficherIngredient();
+    AfficherPresentation();
 }
 
 void MainWindow::AfficherFenetre()
@@ -82,12 +91,6 @@ void MainWindow::Ouvrir(const QString &path)
 
     if (!fileName.isNull())
         emit cheminFichier(fileName);
-    Json.Lecteur(fileName);
-
-    AfficherFenetre();
-    MachineEtats(); //TODO
-    AfficherIngredient();
-    AfficherPresentation();
 }
 
 void MainWindow::MachineEtats()         //Marche PAS

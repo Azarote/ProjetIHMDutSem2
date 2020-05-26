@@ -65,6 +65,7 @@ private:
 public slots:
     void Ouvrir(const QString &path = QString());
     void AfficherEtape();
+    void Lancementlecture(QString);
 
 signals:
     void cheminFichier(QString);
