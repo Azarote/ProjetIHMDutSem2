@@ -14,6 +14,7 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QStateMachine>
+#include <QMessageBox>
 
 #include <QDropEvent>
 #include <QMimeData>
@@ -47,7 +48,6 @@ private:
     Ui::MainWindow *ui;
     Ui::FenetrePresentation presentation;
     Ui::FenetreEtapes etapes;
-    Ui::FenetreApropos apropos;
 
     LecteurJson Json;
 
