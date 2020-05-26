@@ -23,7 +23,6 @@
 #include "lecteurjson.h"
 #include "ui_presentation.h"
 #include "ui_etapes.h"
-#include "ui_apropos.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
