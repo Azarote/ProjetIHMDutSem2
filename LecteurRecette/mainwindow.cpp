@@ -49,14 +49,17 @@ void MainWindow::AfficherIngredient()
 void MainWindow::AfficherEtape()//TODO
 {
     etapes.contenuEtapes->clear();
-    etapes.contenuEtapes->addItem(etapes.label->text());
+    //etapes.contenuEtapes->addItem(etapes.label->text());
 
 }
 
 void MainWindow::AfficherPresentation()
 {
+    QFont titre("Franklin Gothic Demi Cond", 31, QFont::Bold);
     presentation.contenuPresentation->clear();
     presentation.contenuPresentation->addItems(Json.getInfosRecette());
+    presentation.contenuPresentation->itemAt(1,0)->setTextAlignment(Qt::AlignCenter);
+    presentation.contenuPresentation->itemAt(1,0)->setFont(titre);
 }
 
 void MainWindow::MenuFichier(){
