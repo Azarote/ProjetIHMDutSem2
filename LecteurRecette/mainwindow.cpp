@@ -102,7 +102,7 @@ void MainWindow::MachineEtats()         //Marche PAS
       QState *etat = new QState();
       etat->assignProperty(etapes.contenuEtapes, "text", Json.getUpdateEtapes(i));
       listeQState.append(etat);
-      MachineEtapes->addState(etat);
+      MachineEtapes->addState(etat); 
     }
     for(int i=0; i<Json.getEtapes().size();i++)
     {
