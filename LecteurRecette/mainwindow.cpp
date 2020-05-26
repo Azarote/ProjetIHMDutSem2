@@ -54,7 +54,7 @@ void MainWindow::AfficherIngredient()
     presentation.contenuIngredients->addItems(Json.getIngredients());
 }
 
-void MainWindow::AfficherEtape()//TODO
+void MainWindow::AfficherEtape()
 {
     etapes.contenuEtapes->clear();
     etapes.contenuEtapes->addItem(etapes.label->text());
