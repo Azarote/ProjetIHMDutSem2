@@ -55,7 +55,13 @@ void MainWindow::AfficherEtape()//TODO
 
 void MainWindow::AfficherPresentation()
 {
+    //création du style de texte :
+    QString style = "";
+       style += "QListView { ";
+       style += "font-family: Helvetica;font-size: 15pt;";
+       style += "}";
     QFont titre("Franklin Gothic Demi Cond", 31, QFont::Bold);
+    presentation.contenuPresentation->setStyleSheet(style);
     presentation.contenuPresentation->clear();
     presentation.contenuPresentation->addItems(Json.getInfosRecette());
     presentation.contenuPresentation->itemAt(1,0)->setTextAlignment(Qt::AlignCenter);

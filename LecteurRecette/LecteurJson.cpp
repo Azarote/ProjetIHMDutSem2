@@ -30,9 +30,9 @@ void LecteurJson::Lecteur(QString nomFichier ){
 
 
            InfosRecette << (obj.value("name")).toString();
-           InfosRecette << "Description : " << (obj.value("description")).toString();
-           InfosRecette << "Catégorie : " << (obj.value("recipeCategory")).toString();
-           InfosRecette << "Mot Clés : " << (obj.value("keywords")).toString();
+           InfosRecette << "\nDescription : " << (obj.value("description")).toString();
+           InfosRecette << "\nCatégorie : " << (obj.value("recipeCategory")).toString();
+           InfosRecette << "\nMot Clés : " << (obj.value("keywords")).toString();
 
            QJsonValue val = obj.value("recipeIngredient");
            QJsonArray valArray = val.toArray();
