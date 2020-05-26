@@ -72,5 +72,6 @@ public slots:
 
 signals:
     void cheminFichier(QString);
+    void ClearLabel();
 };
 #endif // MAINWINDOW_H

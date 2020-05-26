@@ -15,7 +15,6 @@ MainWindow::MainWindow(QWidget *parent)
     setAcceptDrops(true);
     this->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
     connect(this,SIGNAL(cheminFichier(QString)),this,SLOT(Lancementlecture(QString)));
-
     WidgetEtape = new QWidget;
     WidgetPresentation = new QWidget;
     WidgetApropos = new QWidget;
@@ -138,6 +137,8 @@ void MainWindow::MachineEtats()
     {
       QState *etat = new QState();
       etat->assignProperty(etapes.label, "text", Json.getUpdateEtapes(i));
+      emit ClearLabel();
+       connect(this,SIGNAL(ClearLabel()),etapes.label_2, SLOT(clear()) );
       etat->assignProperty(etapes.label_2, "text", "Etape : " + QString::number(i+1) + " / " + QString::number(Json.getEtapes().size()));
       listeQState.append(etat);
       MachineEtapes->addState(etat); 
