@@ -633,6 +633,28 @@
      <height>430</height>
     </rect>
    </property>
+   <property name="textElideMode">
+    <enum>Qt::ElideNone</enum>
+   </property>
+   <property name="isWrapping" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>230</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
   <zorder>contenuTemps</zorder>
   <zorder>btnPrecedent</zorder>
@@ -645,6 +667,7 @@
   <zorder>labelURL</zorder>
   <zorder>labelTpsTotal</zorder>
   <zorder>contenuEtapes</zorder>
+  <zorder>label</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -25,7 +25,7 @@ void MainWindow::Lancementlecture(QString nomFichier)
 {
     Json.Lecteur(nomFichier);
     AfficherFenetre();
-    MachineEtats(); //TODO 
+    MachineEtats();
     AfficherIngredient();
     AfficherPresentation();
 }
@@ -36,6 +36,7 @@ void MainWindow::AfficherFenetre()
     WidgetPresentation->show();
     WidgetPresentation->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
     etapes.setupUi(WidgetEtape);
+    etapes.label->hide();
     WidgetEtape->show();
     WidgetEtape->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
 }
@@ -56,7 +57,7 @@ void MainWindow::AfficherIngredient()
 void MainWindow::AfficherEtape()//TODO
 {
     etapes.contenuEtapes->clear();
-    //etapes.contenuEtapes->addItem(etapes.label->text());
+    etapes.contenuEtapes->addItem(etapes.label->text());
 
 }
 
@@ -114,16 +115,17 @@ void MainWindow::Ouvrir(const QString &path)
 
     if (!fileName.isNull())
         emit cheminFichier(fileName);
+
 }
 
-void MainWindow::MachineEtats()         //Marche PAS
+void MainWindow::MachineEtats()
 {
     MachineEtapes = new QStateMachine(this);
     QList<QState*> listeQState;
     for(int i=0; i<Json.getEtapes().size();i++)
     {
       QState *etat = new QState();
-      etat->assignProperty(etapes.contenuEtapes, "text", Json.getUpdateEtapes(i));
+      etat->assignProperty(etapes.label, "text", Json.getUpdateEtapes(i));
       listeQState.append(etat);
       MachineEtapes->addState(etat); 
     }
@@ -133,7 +135,7 @@ void MainWindow::MachineEtats()         //Marche PAS
             listeQState[i]->addTransition(etapes.btnPrecedent, SIGNAL(clicked()), listeQState[i-1]);
         if (i!=Json.getEtapes().size()-1)
             listeQState[i]->addTransition(etapes.btnSuivant, SIGNAL(clicked()), listeQState[i+1]);
-        connect(listeQState[i], SIGNAL(entered()), this, SLOT(AfficherEtapes()));
+        connect(listeQState[i], SIGNAL(entered()), this, SLOT(AfficherEtape()));
     }
     MachineEtapes->setInitialState(listeQState[0]);
     MachineEtapes->start();
