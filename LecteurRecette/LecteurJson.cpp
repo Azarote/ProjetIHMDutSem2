@@ -31,7 +31,6 @@ void LecteurJson::Lecteur(QString nomFichier ){
 
            InfosRecette << (obj.value("name")).toString();
            InfosRecette << "\nDescription : " << (obj.value("description")).toString();
-           InfosRecette << "\nCatégorie : " << (obj.value("recipeCategory")).toString();
            InfosRecette << "\nMot Clés : " << (obj.value("keywords")).toString();
 
            QJsonValue val = obj.value("recipeIngredient");
@@ -50,7 +49,7 @@ void LecteurJson::Lecteur(QString nomFichier ){
            Temps <<  (obj.value("cookTimes")).toString();
 
            Temps << "Temps total : " << (obj.value("totalTime")).toString();
-           URL << "URL : " << (obj.value("url")).toString();
+           URL << "URL : " + (obj.value("url")).toString();
 
        }
     }

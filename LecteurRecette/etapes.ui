@@ -464,8 +464,11 @@
      <height>23</height>
     </rect>
    </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>← Instruction précédente</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btnSuivant">
@@ -478,7 +481,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>Instruction suivante →</string>
    </property>
   </widget>
   <widget class="QLabel" name="labelTpsCuisson">
@@ -575,30 +578,6 @@
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="labelURL">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>581</y>
-     <width>51</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Franklin Gothic Demi Cond</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>URL :</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="labelTpsTotal">
    <property name="geometry">
     <rect>
@@ -664,7 +643,6 @@
   <zorder>Separation1</zorder>
   <zorder>contenuURL</zorder>
   <zorder>Separation2</zorder>
-  <zorder>labelURL</zorder>
   <zorder>labelTpsTotal</zorder>
   <zorder>contenuEtapes</zorder>
   <zorder>label</zorder>

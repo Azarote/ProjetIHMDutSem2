@@ -48,17 +48,25 @@ void MainWindow::AfficherIngredient()
        style += "QListView { ";
        style += "font-family: Helvetica;font-size: 12pt;";
        style += "}";
-    QFont titre("Times New Roman", 15, QFont::Bold);
     presentation.contenuIngredients->setStyleSheet(style);
     presentation.contenuIngredients->clear();
     presentation.contenuIngredients->addItems(Json.getIngredients());
 }
 
-void MainWindow::AfficherEtape()//TODO
+void MainWindow::AfficherEtape()
 {
+    //Stylisation du texte
+    QString style = "";
+       style += "QListView { ";
+       style += "font-family: Helvetica;font-size: 12pt;";
+       style += "}";
+    etapes.contenuEtapes->setStyleSheet(style);
     etapes.contenuEtapes->clear();
     etapes.contenuEtapes->addItem(etapes.label->text());
 
+    //On affiche l'URL
+    QStringListModel *modeleURL = new QStringListModel(Json.getURL());
+    etapes.contenuURL->setModel(modeleURL);
 }
 
 void MainWindow::AfficherPresentation()
@@ -74,6 +82,10 @@ void MainWindow::AfficherPresentation()
     presentation.contenuPresentation->addItems(Json.getInfosRecette());
     presentation.contenuPresentation->itemAt(1,0)->setTextAlignment(Qt::AlignCenter);
     presentation.contenuPresentation->itemAt(1,0)->setFont(titre);
+
+    //On affiche l'URL
+    QStringListModel *modeleURL = new QStringListModel(Json.getURL());
+    presentation.contenuURL->setModel(modeleURL);
 }
 
 void MainWindow::MenuFichier(){
