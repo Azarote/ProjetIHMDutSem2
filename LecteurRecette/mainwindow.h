@@ -14,6 +14,7 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QStateMachine>
+#include <QMessageBox>
 
 #include <QDropEvent>
 #include <QMimeData>
@@ -22,7 +23,6 @@
 #include "lecteurjson.h"
 #include "ui_presentation.h"
 #include "ui_etapes.h"
-#include "ui_apropos.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -48,7 +48,6 @@ private:
     Ui::MainWindow *ui;
     Ui::FenetrePresentation presentation;
     Ui::FenetreEtapes etapes;
-    Ui::FenetreApropos apropos;
 
     LecteurJson Json;
     traitement Trait;
@@ -74,5 +73,6 @@ public slots:
 
 signals:
     void cheminFichier(QString);
+    void ClearLabel();
 };
 #endif // MAINWINDOW_H

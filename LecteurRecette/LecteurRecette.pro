@@ -27,7 +27,6 @@ HEADERS += \
     traitement.h
 
 FORMS += \
-    apropos.ui \
     etapes.ui \
     mainwindow.ui \
     presentation.ui
