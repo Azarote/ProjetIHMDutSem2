@@ -9,9 +9,7 @@ void LecteurJson::Lecteur(QString nomFichier ){
     InfosRecette.clear();
     Ingredients.clear();
     Etapes.clear();
-    TempsTot.clear();
-    TempsPrep.clear();
-    Tempscuisson.clear();
+    Temps.clear();
     URL.clear();
 
 
@@ -47,9 +45,10 @@ void LecteurJson::Lecteur(QString nomFichier ){
            for (auto value: valArray)
                Etapes << value.toString();
 
-           TempsPrep <<  (obj.value("prepTime")).toString();
-           Tempscuisson <<  (obj.value("cookTimes")).toString();
-           TempsTot <<  (obj.value("totalTime")).toString();
+           Temps <<  (obj.value("prepTime")).toString();
+           Temps <<  (obj.value("cookTimes")).toString();
+           Temps <<  (obj.value("totalTime")).toString();
+
 
            URL << "URL : " + (obj.value("url")).toString();
 

@@ -2,17 +2,17 @@
 #define TRAITEMENT_H
 
 #include <QStringListModel>
-#include <lecteurjson.h>
+#include "lecteurjson.h"
 
 class traitement
 {
 private:
-    LecteurJson Json;
 public:
     traitement();
+    void traitementTemps(QStringList &, QStringList&, QStringList&, LecteurJson);
 
 public slots:
-    void traitementTemps(QStringList &, QStringList&, QStringList&);
+
 };
 
 #endif // TRAITEMENT_H

@@ -14,15 +14,13 @@
 class LecteurJson
 {
 private:
-    QStringList InfosRecette,Ingredients,Etapes,URL,Tempscuisson,TempsPrep,TempsTot;
+    QStringList InfosRecette,Ingredients,Etapes,URL,Temps;
 public:
     LecteurJson();
     void Lecteur(QString );
 
     inline QStringList getInfosRecette(){ return InfosRecette;}
-    inline QStringList getTempscuisson(){ return Tempscuisson;}
-    inline QStringList getTempsprep(){ return TempsPrep;}
-    inline QStringList getTempstot(){ return TempsTot;}
+    inline QStringList getTemps(){ return Temps;}
     inline QStringList getIngredients(){ return Ingredients;}
     inline QStringList getEtapes(){ return Etapes;}
     inline QString getUpdateEtapes(int i){ return Etapes.at(i);}

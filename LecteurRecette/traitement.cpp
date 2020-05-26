@@ -1,15 +1,15 @@
 #include "traitement.h"
-#include "mainwindow.h"
+#include <mainwindow.h>
 
 traitement::traitement()
 {
 
 }
 
-void traitement::traitementTemps(QStringList &contenuTempsPrep, QStringList &contenuTempsCuisson, QStringList &contenuTempsTotal)
+void traitement::traitementTemps(QStringList &contenuTempsPrep, QStringList &contenuTempsCuisson, QStringList &contenuTempsTotal,LecteurJson Json)
 {
-    QString tempsPreparation = Json.getTempsprep().join("");               // Récupère le temps de préparation
-    QString tempsCuisson = Json.getTempscuisson().join("");                   // Récupère le temps de cuisson
+    QString tempsPreparation = Json.getTemps().at(0);               // Récupère le temps de préparation
+    QString tempsCuisson = Json.getTemps().at(1);                   // Récupère le temps de cuisson
     int tempsTotalHeures;                              // Choix de le calculer car le temps total n'est pas toujours spécifié
     int tempsTotalMinutes;                             // Choix de le calculer car le temps total n'est pas toujours spécifié
     QRegExp CalcHeures("([0-9]*)H");                   // Expréssion régulière pour récupérer les heures
