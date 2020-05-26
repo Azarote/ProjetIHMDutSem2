@@ -7,6 +7,7 @@
 #include <QJsonArray>
 #include <QFile>
 #include <string>
+#include <QString>
 #include <QStringListModel>
 
 

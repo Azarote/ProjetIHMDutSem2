@@ -635,6 +635,19 @@
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>492</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>contenuTemps</zorder>
   <zorder>btnPrecedent</zorder>
   <zorder>btnSuivant</zorder>
@@ -646,6 +659,7 @@
   <zorder>labelTpsTotal</zorder>
   <zorder>contenuEtapes</zorder>
   <zorder>label</zorder>
+  <zorder>label_2</zorder>
  </widget>
  <resources/>
  <connections/>
