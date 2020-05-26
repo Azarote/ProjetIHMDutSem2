@@ -47,8 +47,8 @@ void LecteurJson::Lecteur(QString nomFichier ){
 
            Temps <<  (obj.value("prepTime")).toString();
            Temps <<  (obj.value("cookTimes")).toString();
+           Temps <<  (obj.value("totalTime")).toString();
 
-           Temps << "Temps total : " << (obj.value("totalTime")).toString();
            URL << "URL : " + (obj.value("url")).toString();
 
        }

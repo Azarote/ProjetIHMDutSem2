@@ -41,6 +41,7 @@ public:
      void AfficherFenetre();
      void AfficherPresentation();
      void AfficherIngredient();
+     void AfficherTemps();
     ~MainWindow();
 
 private:
@@ -50,6 +51,7 @@ private:
     Ui::FenetreApropos apropos;
 
     LecteurJson Json;
+    traitement Trait;
 
     void MenuPrincipal();
     void MenuFichier();

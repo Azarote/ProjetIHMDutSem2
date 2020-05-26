@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "traitement.h"
 #include "ui_mainwindow.h"
 #include <QtDebug>
 
@@ -28,6 +29,7 @@ void MainWindow::Lancementlecture(QString nomFichier)
     MachineEtats();
     AfficherIngredient();
     AfficherPresentation();
+    AfficherTemps();
 }
 
 void MainWindow::AfficherFenetre()
@@ -86,6 +88,18 @@ void MainWindow::AfficherPresentation()
     //On affiche l'URL
     QStringListModel *modeleURL = new QStringListModel(Json.getURL());
     presentation.contenuURL->setModel(modeleURL);
+}
+
+void MainWindow::AfficherTemps()
+{
+    QStringList contenuTempsPrep, contenuTempsCuisson, contenuTempsTotal;
+    Trait.traitementTemps(contenuTempsPrep, contenuTempsCuisson, contenuTempsTotal);
+    QStringListModel *modeleTempsPrep = new QStringListModel(contenuTempsPrep);
+    presentation.contenuTempsPrep->setModel(modeleTempsPrep);
+    QStringListModel *modeleTempsCuisson = new QStringListModel(contenuTempsCuisson);
+    presentation.contenuTempsCuisson->setModel(modeleTempsCuisson);
+    QStringListModel *modeleTempsTotal = new QStringListModel(contenuTempsTotal);
+    presentation.contenuTempsTotal->setModel(modeleTempsTotal);
 }
 
 void MainWindow::MenuFichier(){
