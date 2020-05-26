@@ -480,6 +480,12 @@
      <height>23</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
    <property name="text">
     <string>Instruction suivante →</string>
    </property>
@@ -495,10 +501,10 @@
    </property>
    <property name="font">
     <font>
-     <family>Franklin Gothic Demi Cond</family>
+     <family>MS Shell Dlg 2</family>
      <pointsize>11</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
@@ -519,10 +525,10 @@
    </property>
    <property name="font">
     <font>
-     <family>Franklin Gothic Demi Cond</family>
+     <family>MS Shell Dlg 2</family>
      <pointsize>11</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
@@ -589,10 +595,10 @@
    </property>
    <property name="font">
     <font>
-     <family>Franklin Gothic Demi Cond</family>
+     <family>MS Shell Dlg 2</family>
      <pointsize>11</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
+     <weight>75</weight>
+     <bold>true</bold>
      <kerning>true</kerning>
     </font>
    </property>
