@@ -49,7 +49,7 @@ void MainWindow::AfficherIngredient()
 void MainWindow::AfficherEtape()//TODO
 {
     etapes.contenuEtapes->clear();
-    etapes.contenuEtapes->addItems(Json.getEtapes());
+    etapes.contenuEtapes->addItem(etapes.label->text());
 
 }
 
