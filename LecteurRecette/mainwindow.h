@@ -22,6 +22,7 @@
 #include "lecteurjson.h"
 #include "ui_presentation.h"
 #include "ui_etapes.h"
+#include "ui_apropos.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -46,6 +47,7 @@ private:
     Ui::MainWindow *ui;
     Ui::FenetrePresentation presentation;
     Ui::FenetreEtapes etapes;
+    Ui::FenetreApropos apropos;
 
     LecteurJson Json;
 
@@ -59,11 +61,12 @@ private:
 
     void dropEvent(QDropEvent*);
 
-    QWidget * WidgetEtape,* WidgetPresentation;
+    QWidget * WidgetEtape,* WidgetPresentation,* WidgetApropos;
 
 
 public slots:
     void Ouvrir(const QString &path = QString());
+    void Help();
     void AfficherEtape();
     void Lancementlecture(QString);
 

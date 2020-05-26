@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     WidgetEtape = new QWidget;
     WidgetPresentation = new QWidget;
+    WidgetApropos = new QWidget;
 }
 
 void MainWindow::Lancementlecture(QString nomFichier)
@@ -89,6 +90,13 @@ void MainWindow::MenuAide(){
    QMenu *HelpMenu = new QMenu(tr("Aide"), this);
    menuBar()->addMenu(HelpMenu);
    HelpMenu->addAction(tr("À propos"), this, SLOT(Help()));
+}
+
+void MainWindow::Help()
+{
+    apropos.setupUi(WidgetApropos);
+    WidgetApropos->show();
+    WidgetApropos->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
 }
 
 void MainWindow::MenuPrincipal(){
