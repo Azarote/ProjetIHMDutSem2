@@ -138,7 +138,7 @@ void MainWindow::MachineEtats()
     {
       QState *etat = new QState();
       etat->assignProperty(etapes.label, "text", Json.getUpdateEtapes(i));
-      etat->assignProperty(etapes.label_2, "text", "Etape : " + QString::number(i+1));
+      etat->assignProperty(etapes.label_2, "text", "Etape : " + QString::number(i+1) + " / " + QString::number(Json.getEtapes().size()));
       listeQState.append(etat);
       MachineEtapes->addState(etat); 
     }
