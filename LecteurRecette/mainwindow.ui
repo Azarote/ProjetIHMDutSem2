@@ -464,10 +464,10 @@
    <widget class="QLabel" name="ImageDragNDrop">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>175</y>
-      <width>460</width>
-      <height>250</height>
+      <x>150</x>
+      <y>155</y>
+      <width>500</width>
+      <height>290</height>
      </rect>
     </property>
     <property name="text">
@@ -513,16 +513,16 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>250</x>
       <y>530</y>
-      <width>331</width>
-      <height>31</height>
+      <width>300</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Freestyle Script</family>
-      <pointsize>18</pointsize>
+      <pointsize>15</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -542,7 +542,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
