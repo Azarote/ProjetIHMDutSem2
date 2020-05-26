@@ -953,6 +953,16 @@
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>450</y>
+       <width>231</width>
+       <height>81</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="ongletIngredients">
     <property name="autoFillBackground">

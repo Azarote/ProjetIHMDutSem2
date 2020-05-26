@@ -93,12 +93,15 @@ void MainWindow::AfficherTemps()
 {
     QStringList contenuTempsPrep, contenuTempsCuisson, contenuTempsTotal;
     Trait.traitementTemps(contenuTempsPrep, contenuTempsCuisson, contenuTempsTotal);
-    QStringListModel *modeleTempsPrep = new QStringListModel(contenuTempsPrep);
-    presentation.contenuTempsPrep->setModel(modeleTempsPrep);
-    QStringListModel *modeleTempsCuisson = new QStringListModel(contenuTempsCuisson);
-    presentation.contenuTempsCuisson->setModel(modeleTempsCuisson);
-    QStringListModel *modeleTempsTotal = new QStringListModel(contenuTempsTotal);
-    presentation.contenuTempsTotal->setModel(modeleTempsTotal);
+
+    presentation.listWidget->addItems(Json.getTempsprep());
+
+//    QStringListModel *modeleTempsPrep = new QStringListModel(contenuTempsPrep);
+//    presentation.contenuTempsPrep->setModel(modeleTempsPrep);
+//    QStringListModel *modeleTempsCuisson = new QStringListModel(contenuTempsCuisson);
+//    presentation.contenuTempsCuisson->setModel(modeleTempsCuisson);
+//    QStringListModel *modeleTempsTotal = new QStringListModel(contenuTempsTotal);
+//    presentation.contenuTempsTotal->setModel(modeleTempsTotal);
 }
 
 void MainWindow::MenuFichier(){

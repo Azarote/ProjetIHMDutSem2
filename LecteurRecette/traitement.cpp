@@ -8,8 +8,8 @@ traitement::traitement()
 
 void traitement::traitementTemps(QStringList &contenuTempsPrep, QStringList &contenuTempsCuisson, QStringList &contenuTempsTotal)
 {
-    QString tempsPreparation = Json.getTemps()[0];               // Récupère le temps de préparation
-    QString tempsCuisson = Json.getTemps()[1];                   // Récupère le temps de cuisson
+    QString tempsPreparation = Json.getTempsprep().join("");               // Récupère le temps de préparation
+    QString tempsCuisson = Json.getTempscuisson().join("");                   // Récupère le temps de cuisson
     int tempsTotalHeures;                              // Choix de le calculer car le temps total n'est pas toujours spécifié
     int tempsTotalMinutes;                             // Choix de le calculer car le temps total n'est pas toujours spécifié
     QRegExp CalcHeures("([0-9]*)H");                   // Expréssion régulière pour récupérer les heures
