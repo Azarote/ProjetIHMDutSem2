@@ -538,29 +538,6 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QListView" name="contenuTemps">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>530</y>
-     <width>800</width>
-     <height>50</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="Line" name="Separation1">
-   <property name="geometry">
-    <rect>
-     <x>256</x>
-     <y>540</y>
-     <width>20</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
   <widget class="QListView" name="contenuURL">
    <property name="geometry">
     <rect>
@@ -569,19 +546,6 @@
      <width>800</width>
      <height>20</height>
     </rect>
-   </property>
-  </widget>
-  <widget class="Line" name="Separation2">
-   <property name="geometry">
-    <rect>
-     <x>524</x>
-     <y>540</y>
-     <width>20</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
    </property>
   </widget>
   <widget class="QLabel" name="labelTpsTotal">
@@ -654,14 +618,44 @@
     <string/>
    </property>
   </widget>
-  <zorder>contenuTemps</zorder>
+  <widget class="QListView" name="contenuTempsCuisson">
+   <property name="geometry">
+    <rect>
+     <x>266</x>
+     <y>530</y>
+     <width>267</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListView" name="contenuTempsTotal">
+   <property name="geometry">
+    <rect>
+     <x>533</x>
+     <y>530</y>
+     <width>266</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListView" name="contenuTempsPrep">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>530</y>
+     <width>266</width>
+     <height>50</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>contenuTempsPrep</zorder>
+  <zorder>contenuTempsCuisson</zorder>
+  <zorder>contenuTempsTotal</zorder>
   <zorder>btnPrecedent</zorder>
   <zorder>btnSuivant</zorder>
   <zorder>labelTpsCuisson</zorder>
   <zorder>labelTpsPreparation</zorder>
-  <zorder>Separation1</zorder>
   <zorder>contenuURL</zorder>
-  <zorder>Separation2</zorder>
   <zorder>labelTpsTotal</zorder>
   <zorder>contenuEtapes</zorder>
   <zorder>label</zorder>

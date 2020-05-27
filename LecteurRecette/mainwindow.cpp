@@ -101,6 +101,10 @@ void MainWindow::AfficherTemps()
     presentation.contenuTempsPrep->setModel(modeleTempsPrep);
     presentation.contenuTempsCuisson->setModel(modeleTempsCuisson);
     presentation.contenuTempsTotal->setModel(modeleTempsTotal);
+
+    etapes.contenuTempsPrep->setModel(modeleTempsPrep);
+    etapes.contenuTempsCuisson->setModel(modeleTempsCuisson);
+    etapes.contenuTempsTotal->setModel(modeleTempsTotal);
 }
 
 void MainWindow::MenuFichier(){
