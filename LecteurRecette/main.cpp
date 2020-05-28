@@ -1,3 +1,10 @@
+/**
+ * \file main.cpp
+ * \author Munoz Matteo - Dufour Mattéo
+ *
+ * \brief Programme principal
+ *
+ */
 #include "mainwindow.h"
 
 #include <QApplication>

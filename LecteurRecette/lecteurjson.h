@@ -1,6 +1,12 @@
 #ifndef LECTEURJSON_H
 #define LECTEURJSON_H
-
+/**
+ * \file lecteurjson.h
+ * \author Munoz Matteo - Dufour Mattéo
+ *
+ * \brief Récupération des éléments souhaiter dans le JSON
+ *
+ */
 #include <QJsonParseError>
 #include <QJsonObject>
 #include <QDebug>

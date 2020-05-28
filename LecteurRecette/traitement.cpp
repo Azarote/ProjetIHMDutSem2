@@ -1,3 +1,11 @@
+/**
+ * \file traitement.cpp
+ * \author Munoz Matteo - Dufour Mattéo
+ *
+ * \brief Programme qui s'occupe du traitement du fichier JSON
+ *
+ */
+
 #include "traitement.h"
 #include <mainwindow.h>
 

@@ -1,3 +1,11 @@
+/**
+ * \file lecteurjson.cpp
+ * \author Munoz Matteo - Dufour Mattéo
+ *
+ * \brief Programme qui lit le fichier JSON et qui récupère ce dont on a besoin
+ *
+ */
+
 #include "lecteurjson.h"
 
 LecteurJson::LecteurJson()
