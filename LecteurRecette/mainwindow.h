@@ -116,7 +116,21 @@ public slots:
     void Lancementlecture(QString);
 
 signals:
+    /**
+     * \sa signal cheminfichier
+     * \brief Signal qui indique qu'un fichier à été trouver
+     *
+     * \param QString qui contient le chemin du fichier
+     */
+
     void cheminFichier(QString);
+
+    /**
+     * \sa signal clearlabel
+     * \brief Signal qui clear les numéro des étapes
+     *
+     *
+     */
     void ClearLabel();
 };
 #endif // MAINWINDOW_H
