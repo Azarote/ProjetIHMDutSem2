@@ -1,3 +1,11 @@
+/**
+ * \file mainwindow.cpp
+ * \author Munoz Matteo - Dufour Mattéo
+ *
+ * \brief Programme qui gère toute l'affichage
+ *
+ */
+
 #include "mainwindow.h"
 #include "traitement.h"
 #include "ui_mainwindow.h"
