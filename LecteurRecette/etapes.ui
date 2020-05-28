@@ -511,7 +511,7 @@
     <string>Temps de cuisson</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="labelTpsPreparation">
@@ -535,7 +535,7 @@
     <string>Temps de préparation</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QListView" name="contenuURL">
@@ -570,7 +570,7 @@
     <string>Temps total</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QListWidget" name="contenuEtapes">
@@ -622,9 +622,9 @@
    <property name="geometry">
     <rect>
      <x>266</x>
-     <y>530</y>
+     <y>555</y>
      <width>267</width>
-     <height>50</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
@@ -632,9 +632,9 @@
    <property name="geometry">
     <rect>
      <x>533</x>
-     <y>530</y>
+     <y>555</y>
      <width>266</width>
-     <height>50</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
@@ -642,9 +642,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>530</y>
+     <y>555</y>
      <width>266</width>
-     <height>50</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

@@ -461,7 +461,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>530</height>
+     <height>556</height>
     </rect>
    </property>
    <property name="palette">
@@ -1029,7 +1029,7 @@
     <string>Temps de préparation</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="labelTpsCuisson">
@@ -1053,7 +1053,7 @@
     <string>Temps de cuisson</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="labelTpsTotal">
@@ -1078,16 +1078,16 @@
     <string>Temps total</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QListView" name="contenuTempsPrep">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>530</y>
+     <y>555</y>
      <width>266</width>
-     <height>50</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
@@ -1105,9 +1105,9 @@
    <property name="geometry">
     <rect>
      <x>266</x>
-     <y>530</y>
+     <y>555</y>
      <width>267</width>
-     <height>50</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
@@ -1115,12 +1115,13 @@
    <property name="geometry">
     <rect>
      <x>533</x>
-     <y>530</y>
+     <y>555</y>
      <width>266</width>
-     <height>50</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
+  <zorder>Onglets</zorder>
   <zorder>contenuTempsTotal</zorder>
   <zorder>contenuTempsCuisson</zorder>
   <zorder>contenuURL</zorder>
@@ -1128,7 +1129,6 @@
   <zorder>labelTpsPreparation</zorder>
   <zorder>labelTpsCuisson</zorder>
   <zorder>labelTpsTotal</zorder>
-  <zorder>Onglets</zorder>
  </widget>
  <resources/>
  <connections/>
