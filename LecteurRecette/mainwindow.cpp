@@ -2,7 +2,7 @@
  * \file mainwindow.cpp
  * \author Munoz Matteo - Dufour Mattéo
  *
- * \brief Programme qui gère toute l'affichage
+ * \brief Programme qui gère tout l'affichage
  *
  */
 
@@ -12,8 +12,7 @@
 #include <QtDebug>
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
@@ -22,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     MenuAide();
 
     setAcceptDrops(true);
-    this->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
+    this->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre principale
     connect(this,SIGNAL(cheminFichier(QString)),this,SLOT(Lancementlecture(QString)));
     WidgetEtape = new QWidget;
     WidgetPresentation = new QWidget;
@@ -43,11 +42,11 @@ void MainWindow::AfficherFenetre()
 {
     presentation.setupUi(WidgetPresentation);
     WidgetPresentation->show();
-    WidgetPresentation->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
+    WidgetPresentation->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre de présentation
     etapes.setupUi(WidgetEtape);
     etapes.label->hide();
     WidgetEtape->show();
-    WidgetEtape->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre
+    WidgetEtape->setFixedSize(QSize(800, 600)); //On empêche de redimensionner la fenêtre des étapes
 }
 
 void MainWindow::AfficherIngredient()
@@ -64,8 +63,7 @@ void MainWindow::AfficherIngredient()
 
 void MainWindow::AfficherEtape()
 {
-    //Stylisation du texte
-    QString style = "";
+    QString style = ""; //Stylise le texte
        style += "QListView { ";
        style += "font-family: Helvetica;font-size: 12pt;";
        style += "}";
@@ -73,15 +71,13 @@ void MainWindow::AfficherEtape()
     etapes.contenuEtapes->clear();
     etapes.contenuEtapes->addItem(etapes.label->text());
 
-    //On affiche l'URL
-    QStringListModel *modeleURL = new QStringListModel(Json.getURL());
+    QStringListModel *modeleURL = new QStringListModel(Json.getURL()); //Affiche l'URL en bas de fenêtre
     etapes.contenuURL->setModel(modeleURL);
 }
 
 void MainWindow::AfficherPresentation()
 {
-    //Stylisation du texte
-    QString style = "";
+    QString style = ""; //Stylise le texte
        style += "QListView { ";
        style += "font-family: Helvetica;font-size: 15pt;";
        style += "}";
@@ -92,8 +88,7 @@ void MainWindow::AfficherPresentation()
     presentation.contenuPresentation->itemAt(1,0)->setTextAlignment(Qt::AlignCenter);
     presentation.contenuPresentation->itemAt(1,0)->setFont(titre);
 
-    //On affiche l'URL
-    QStringListModel *modeleURL = new QStringListModel(Json.getURL());
+    QStringListModel *modeleURL = new QStringListModel(Json.getURL()); //Affiche l'URL en bas de fenêtre
     presentation.contenuURL->setModel(modeleURL);
 }
 
