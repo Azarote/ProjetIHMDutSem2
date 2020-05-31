@@ -1,5 +1,3 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
 /**
  * \file mainwindow.h
  * \author Munoz Matteo - Dufour Mattéo
@@ -7,28 +5,30 @@
  * \brief Classe des différentes fenêtre
  *
  */
-#include <QMainWindow>
-#include <QLabel>
-#include <QFileDialog>
-#include <QFile>
-#include <QJsonArray>
-#include <QTextEdit>
-#include <QJsonValue>
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+
+#include "lecteurjson.h"
+#include "temps.h"
+#include "ui_etapes.h"
+#include "ui_presentation.h"
+
 #include <QDebug>
-#include <QListView>
-#include <QStringListModel>
+#include <QDropEvent>
+#include <QFile>
+#include <QFileDialog>
+#include <QJsonArray>
 #include <QJsonDocument>
 #include <QJsonObject>
-#include <QStateMachine>
+#include <QJsonValue>
+#include <QLabel>
+#include <QListView>
+#include <QMainWindow>
 #include <QMessageBox>
-
-#include <QDropEvent>
 #include <QMimeData>
-
-#include "traitement.h"
-#include "lecteurjson.h"
-#include "ui_presentation.h"
-#include "ui_etapes.h"
+#include <QStateMachine>
+#include <QStringListModel>
+#include <QTextEdit>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -37,6 +37,25 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+
+private:
+    Ui::MainWindow *ui;/*!< Ui::MainWindow contenant l'UI*/
+    Ui::FenetrePresentation presentation;/*!< Ui::FenetrePresentation contenant l'UI présentation*/
+    Ui::FenetreEtapes etapes;/*!< Ui::FenetreEtapes contenant l'UI etapes*/
+
+    LecteurJson Json;/*!< Instance de la classe LecteurJson*/
+    traitement Trait;/*!< Instance de la classe traitement*/
+
+    void MenuPrincipal();
+    void MenuFichier();
+    void MenuAide();
+
+    void dragEnterEvent(QDragEnterEvent*);
+    void dropEvent(QDropEvent*);
+
+    QStateMachine *MachineEtapes;
+
+    QWidget * WidgetEtape,* WidgetPresentation,* WidgetApropos;
 
 public:
     /*!
@@ -57,21 +76,21 @@ public:
      /*!
           *  \brief Afficher Fenêtre
           *
-          *  Fonction Qui aiffhce les fenêtres aprés lecture du JSON.
+          *  Fonction Qui affichee les fenêtres après lecture du JSON.
           */
 
      void AfficherFenetre();
      /*!
           *  \brief Afficher Présentation
           *
-          *  Affiche le texte dans la fenêtre présentation aprés lecture du JSON.
+          *  Affiche le texte dans la fenêtre présentation après lecture du JSON.
           */
 
      void AfficherPresentation();
      /*!
           *  \brief Afficher Ingrédient
           *
-          *  Affiche les ingédients dans la fenêtre Ingredient aprés lecture du JSON
+          *  Affiche les ingédients dans la fenêtre Ingredient après lecture du JSON
           */
      void AfficherIngredient();
      /*!
@@ -87,27 +106,6 @@ public:
           */
 
     ~MainWindow();
-
-private:
-    Ui::MainWindow *ui;/*!< Ui::MainWindow contenant l'UI*/
-    Ui::FenetrePresentation presentation;/*!< Ui::FenetrePresentation contenant l'UI présentation*/
-    Ui::FenetreEtapes etapes;/*!< Ui::FenetreEtapes contenant l'UI etapes*/
-
-    LecteurJson Json;/*!< Instance de la classe LecteurJson*/
-    traitement Trait;/*!< Instance de la classe traitement*/
-
-    void MenuPrincipal();
-    void MenuFichier();
-    void MenuAide();
-
-    void dragEnterEvent(QDragEnterEvent*);
-
-    QStateMachine *MachineEtapes;
-
-    void dropEvent(QDropEvent*);
-
-    QWidget * WidgetEtape,* WidgetPresentation,* WidgetApropos;
-
 
 public slots:
     void Ouvrir(const QString &path = QString());

@@ -19,12 +19,12 @@ SOURCES += \
     lecteurjson.cpp \
     main.cpp \
     mainwindow.cpp \
-    traitement.cpp
+    temps.cpp
 
 HEADERS += \
     lecteurjson.h \
     mainwindow.h \
-    traitement.h
+    temps.h
 
 FORMS += \
     etapes.ui \
