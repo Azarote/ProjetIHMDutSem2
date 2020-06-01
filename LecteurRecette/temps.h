@@ -13,7 +13,6 @@
 class traitement
 {
 public:
-    traitement();
     void traitementTemps(QStringList &, QStringList&, QStringList&, LecteurJson);
 };
 

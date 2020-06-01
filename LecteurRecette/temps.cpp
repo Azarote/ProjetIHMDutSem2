@@ -8,10 +8,6 @@
 #include "temps.h"
 #include "mainwindow.h"
 
-traitement::traitement()
-{
-
-}
 
 void traitement::traitementTemps(QStringList &contenuTempsPrep, QStringList &contenuTempsCuisson, QStringList &contenuTempsTotal,LecteurJson Json)
 {
