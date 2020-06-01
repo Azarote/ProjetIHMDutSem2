@@ -22,7 +22,6 @@ private:
     QStringList InfosRecette,Ingredients,Etapes,URL,Temps;
 
 public:
-    LecteurJson();
     void Lecteur(QString );
 
     inline QStringList getInfosRecette(){ return InfosRecette;}

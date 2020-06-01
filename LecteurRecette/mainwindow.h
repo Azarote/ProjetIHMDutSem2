@@ -116,7 +116,7 @@ public slots:
 signals:
     /**
      * \sa signal cheminfichier
-     * \brief Signal qui indique qu'un fichier à été trouver
+     * \brief Signal qui indique qu'un fichier à été trouvé
      *
      * \param QString qui contient le chemin du fichier
      */

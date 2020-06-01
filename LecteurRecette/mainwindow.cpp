@@ -185,7 +185,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
 void MainWindow::dragEnterEvent(QDragEnterEvent *e)
 {
     if (e->mimeData()->hasUrls())

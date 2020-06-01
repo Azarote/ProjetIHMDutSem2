@@ -7,11 +7,6 @@
  */
 #include "lecteurjson.h"
 
-LecteurJson::LecteurJson()
-{
-
-}
-
 void LecteurJson::Lecteur(QString nomFichier )
 {
     InfosRecette.clear();
