@@ -166,7 +166,7 @@ public slots:
 
     /**
      * \fn Lancementlecture
-     * \brief Fonction qui appelle la fonction qui traite le json + ouvre toutes les fenêtres nécessaires.
+     * \brief Fonction qui appelle la fonction qui traite le json + affiche toutes les informations nécessaires.
      *
      * \param QString qui contient le chemin du fichier(reçue par la fonction ouvrir).
      */
