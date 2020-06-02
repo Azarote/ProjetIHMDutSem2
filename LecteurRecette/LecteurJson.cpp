@@ -52,7 +52,7 @@ void LecteurJson::Lecteur(QString nomFichier )
                 Etapes << value.toString();
 
             Temps <<  (obj.value("prepTime")).toString();                                   //Récupère les différents temps
-            Temps <<  (obj.value("cookTimes")).toString();
+            Temps <<  (obj.value("cookTime")).toString();
             Temps <<  (obj.value("totalTime")).toString();
 
 
