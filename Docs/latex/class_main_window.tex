@@ -1,0 +1,233 @@
+\hypertarget{class_main_window}{}\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+classe qui gère l\textquotesingle{}affichage des différentes fenêtres  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_main_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_main_window__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a37a30280ba05a52445ecbea9deaa5385}{Ouvrir} (const Q\+String \&path=Q\+String())
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}ouvrir un fichier sur la fenêtre. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a25ec89113c14218717cfade9a58f8fdb}{Help} ()
+\begin{DoxyCompactList}\small\item\em Menu aide sur la fenêtre principal. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ae90cd3ee3e8e0b2ddf842514fafd13dc}{Afficher\+Etape} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui affiche les etapes de la recette. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ac368dfd7e2609f0cb72fc1428771aa97}{Lancementlecture} (Q\+String)
+\begin{DoxyCompactList}\small\item\em Fonction qui appelle la fonction qui traite le json + affiche toutes les informations nécessaires. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a397116dafcb548fec351091cc025b822}{chemin\+Fichier} (Q\+String)
+\begin{DoxyCompactList}\small\item\em Signal qui indique qu\textquotesingle{}un fichier à été trouvé \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a9a0c33e6e696ffc763560205f992650d}{Clear\+Label} ()
+\begin{DoxyCompactList}\small\item\em Signal qui clear les numéro des étapes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_main_window}{Main\+Window}. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a59cd9a83e43405ae1ad5c18e79b04db5}{Machine\+Etats} ()
+\item 
+void \hyperlink{class_main_window_aad6ceb17a20cccdc88050996600e9616}{Afficher\+Fenetre} ()
+\begin{DoxyCompactList}\small\item\em Afficher Fenêtre. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_aeddbbb22621e412b4749d331c1d45001}{Afficher\+Presentation} ()
+\begin{DoxyCompactList}\small\item\em Afficher Présentation. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ad4059abf16eb904f988371b3791002bf}{Afficher\+Ingredient} ()
+\begin{DoxyCompactList}\small\item\em Afficher Ingrédient. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a33811a52abf8f1ce71ec4e150d9c9ac8}{Afficher\+Temps} ()
+\begin{DoxyCompactList}\small\item\em Afficher temps. \end{DoxyCompactList}\item 
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe qui gère l\textquotesingle{}affichage des différentes fenêtres 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Main\+Window()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \hyperlink{class_main_window}{Main\+Window}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointeur sur Q\+Widget \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{Main\+Window@{Main\+Window}!````~Main\+Window@{$\sim$\+Main\+Window}}
+\index{````~Main\+Window@{$\sim$\+Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{$\sim$\+Main\+Window()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+Destructeur de la classe \hyperlink{class_main_window}{Main\+Window} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_ae90cd3ee3e8e0b2ddf842514fafd13dc}\label{class_main_window_ae90cd3ee3e8e0b2ddf842514fafd13dc}} 
+\index{Main\+Window@{Main\+Window}!Afficher\+Etape@{Afficher\+Etape}}
+\index{Afficher\+Etape@{Afficher\+Etape}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Afficher\+Etape}{AfficherEtape}}
+{\footnotesize\ttfamily Main\+Window\+::\+Afficher\+Etape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Fonction qui affiche les etapes de la recette. 
+
+\mbox{\Hypertarget{class_main_window_aad6ceb17a20cccdc88050996600e9616}\label{class_main_window_aad6ceb17a20cccdc88050996600e9616}} 
+\index{Main\+Window@{Main\+Window}!Afficher\+Fenetre@{Afficher\+Fenetre}}
+\index{Afficher\+Fenetre@{Afficher\+Fenetre}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Afficher\+Fenetre()}{AfficherFenetre()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Afficher\+Fenetre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afficher Fenêtre. 
+
+Fonction Qui affichee les fenêtres après lecture du J\+S\+ON. \mbox{\Hypertarget{class_main_window_ad4059abf16eb904f988371b3791002bf}\label{class_main_window_ad4059abf16eb904f988371b3791002bf}} 
+\index{Main\+Window@{Main\+Window}!Afficher\+Ingredient@{Afficher\+Ingredient}}
+\index{Afficher\+Ingredient@{Afficher\+Ingredient}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Afficher\+Ingredient()}{AfficherIngredient()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Afficher\+Ingredient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afficher Ingrédient. 
+
+Affiche les ingédients dans la fenêtre Ingredient après lecture du J\+S\+ON \mbox{\Hypertarget{class_main_window_aeddbbb22621e412b4749d331c1d45001}\label{class_main_window_aeddbbb22621e412b4749d331c1d45001}} 
+\index{Main\+Window@{Main\+Window}!Afficher\+Presentation@{Afficher\+Presentation}}
+\index{Afficher\+Presentation@{Afficher\+Presentation}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Afficher\+Presentation()}{AfficherPresentation()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Afficher\+Presentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afficher Présentation. 
+
+Affiche le texte dans la fenêtre présentation après lecture du J\+S\+ON. \mbox{\Hypertarget{class_main_window_a33811a52abf8f1ce71ec4e150d9c9ac8}\label{class_main_window_a33811a52abf8f1ce71ec4e150d9c9ac8}} 
+\index{Main\+Window@{Main\+Window}!Afficher\+Temps@{Afficher\+Temps}}
+\index{Afficher\+Temps@{Afficher\+Temps}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Afficher\+Temps()}{AfficherTemps()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Afficher\+Temps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afficher temps. 
+
+Affiche le temp après traitement. \mbox{\Hypertarget{class_main_window_a397116dafcb548fec351091cc025b822}\label{class_main_window_a397116dafcb548fec351091cc025b822}} 
+\index{Main\+Window@{Main\+Window}!chemin\+Fichier@{chemin\+Fichier}}
+\index{chemin\+Fichier@{chemin\+Fichier}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{chemin\+Fichier}{cheminFichier}}
+{\footnotesize\ttfamily void Main\+Window\+::chemin\+Fichier (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal qui indique qu\textquotesingle{}un fichier à été trouvé 
+
+\begin{DoxySeeAlso}{See also}
+signal \hyperlink{class_main_window_a397116dafcb548fec351091cc025b822}{chemin\+Fichier} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+String} & qui contient le chemin du fichier \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a9a0c33e6e696ffc763560205f992650d}\label{class_main_window_a9a0c33e6e696ffc763560205f992650d}} 
+\index{Main\+Window@{Main\+Window}!Clear\+Label@{Clear\+Label}}
+\index{Clear\+Label@{Clear\+Label}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Clear\+Label}{ClearLabel}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Clear\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal qui clear les numéro des étapes. 
+
+\begin{DoxySeeAlso}{See also}
+signal \hyperlink{class_main_window_a9a0c33e6e696ffc763560205f992650d}{Clear\+Label} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_main_window_a25ec89113c14218717cfade9a58f8fdb}\label{class_main_window_a25ec89113c14218717cfade9a58f8fdb}} 
+\index{Main\+Window@{Main\+Window}!Help@{Help}}
+\index{Help@{Help}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Help}{Help}}
+{\footnotesize\ttfamily Main\+Window\+::\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Menu aide sur la fenêtre principal. 
+
+\mbox{\Hypertarget{class_main_window_ac368dfd7e2609f0cb72fc1428771aa97}\label{class_main_window_ac368dfd7e2609f0cb72fc1428771aa97}} 
+\index{Main\+Window@{Main\+Window}!Lancementlecture@{Lancementlecture}}
+\index{Lancementlecture@{Lancementlecture}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Lancementlecture}{Lancementlecture}}
+{\footnotesize\ttfamily Main\+Window\+::\+Lancementlecture (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Fichier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Fonction qui appelle la fonction qui traite le json + affiche toutes les informations nécessaires. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+String} & qui contient le chemin du fichier(reçue par la fonction ouvrir). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a59cd9a83e43405ae1ad5c18e79b04db5}\label{class_main_window_a59cd9a83e43405ae1ad5c18e79b04db5}} 
+\index{Main\+Window@{Main\+Window}!Machine\+Etats@{Machine\+Etats}}
+\index{Machine\+Etats@{Machine\+Etats}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Machine\+Etats()}{MachineEtats()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Machine\+Etats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_main_window_a37a30280ba05a52445ecbea9deaa5385}\label{class_main_window_a37a30280ba05a52445ecbea9deaa5385}} 
+\index{Main\+Window@{Main\+Window}!Ouvrir@{Ouvrir}}
+\index{Ouvrir@{Ouvrir}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Ouvrir}{Ouvrir}}
+{\footnotesize\ttfamily Main\+Window\+::\+Ouvrir (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{path = {\ttfamily QString()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Fonction qui permet d\textquotesingle{}ouvrir un fichier sur la fenêtre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Qstring} & qui contient le chemin du fichier. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\+h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}\end{DoxyCompactItemize}
