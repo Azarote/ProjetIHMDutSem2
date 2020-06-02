@@ -34,6 +34,10 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+/*! \class MainWindow
+   * \brief classe qui gère l'affichage des différentes fenêtres
+   *
+   */
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -108,9 +112,32 @@ public:
     ~MainWindow();
 
 public slots:
+     /**
+      * \fn Ouvrir
+      * \brief Fonction qui permet d'ouvrir un fichier sur la fenêtre
+      *
+      * \param Qstring qui contient le chemin du fichier.
+      */
     void Ouvrir(const QString &path = QString());
+    /**
+     * \fn Help
+     * \brief Menu aide sur la fenêtre principal.
+     *
+     */
     void Help();
+    /**
+     * \fn AfficherEtape
+     * \brief Fonction qui affiche les etapes de la recette.
+     *
+     */
     void AfficherEtape();
+    /**
+     * \fn Lancementlecture
+     * \brief Fonction qui appelle la fonction qui traite le json + ouvre toutes les fenêtres nécéssaires.
+     *
+     * \param QString qui contient le chemin du fichier(reçue par la fonction ouvrir).
+     */
+
     void Lancementlecture(QString);
 
 signals:

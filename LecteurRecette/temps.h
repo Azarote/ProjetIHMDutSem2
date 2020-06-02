@@ -10,6 +10,10 @@
  */
 #include "lecteurjson.h"
 
+/*! \class traitement
+   * \brief classe permettant le traitement du temps du fichier JSon
+   *
+   */
 class traitement
 {
 public:

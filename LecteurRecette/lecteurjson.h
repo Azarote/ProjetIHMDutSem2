@@ -16,6 +16,10 @@
 #include <QString>
 #include <QStringListModel>
 
+/*! \class LecteurJson
+   * \brief classe qui permet la lecture d'un fichier JSON
+   *
+   */
 class LecteurJson
 {
 private:
