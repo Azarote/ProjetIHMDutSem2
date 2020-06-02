@@ -1,6 +1,3 @@
-#ifndef TEMPS_H
-#define TEMPS_H
-
 /**
  * \file temps.h
  * \author Munoz Matteo - Dufour Mattéo
@@ -8,6 +5,9 @@
  * \brief Traitement donnée du programme
  *
  */
+#ifndef TEMPS_H
+#define TEMPS_H
+
 #include "lecteurjson.h"
 
 /*! \class traitement
