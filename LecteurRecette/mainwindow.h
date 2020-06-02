@@ -107,10 +107,10 @@ public:
      void MachineEtats();
 
      /*!
-       * \brief Afficher Fenêtre
-       *
-       * Fonction Qui affichee les fenêtres après lecture du JSON.
-       */
+      * \brief Afficher Fenêtre
+      *
+      * Fonction Qui affichee les fenêtres après lecture du JSON.
+      */
      void AfficherFenetre();
 
      /*!
@@ -151,25 +151,25 @@ public slots:
     void Ouvrir(const QString &path = QString());
 
      /**
-     * \fn Help
-     * \brief Menu aide sur la fenêtre principal.
-     *
-     */
+      * \fn Help
+      * \brief Menu aide sur la fenêtre principal.
+      *
+      */
     void Help();
 
-    /**
-     * \fn AfficherEtape
-     * \brief Fonction qui affiche les etapes de la recette.
-     *
-     */
+     /**
+      * \fn AfficherEtape
+      * \brief Fonction qui affiche les etapes de la recette.
+      *
+      */
     void AfficherEtape();
 
-    /**
-     * \fn Lancementlecture
-     * \brief Fonction qui appelle la fonction qui traite le json + affiche toutes les informations nécessaires.
-     *
-     * \param QString qui contient le chemin du fichier(reçue par la fonction ouvrir).
-     */
+     /**
+      * \fn Lancementlecture
+      * \brief Fonction qui appelle la fonction qui traite le json + affiche toutes les informations nécessaires.
+      *
+      * \param QString qui contient le chemin du fichier(reçue par la fonction ouvrir).
+      */
     void Lancementlecture(QString);
 
 signals:
