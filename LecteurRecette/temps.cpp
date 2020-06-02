@@ -20,16 +20,34 @@ void traitement::traitementTemps(QStringList &contenuTempsPrep, QStringList &con
 
     CalcMinutes.indexIn(tempsPreparation);
     CalcHeures.indexIn(tempsPreparation);
-    contenuTempsPrep << CalcHeures.cap(1) + " heures et " + CalcMinutes.cap(1) + " minutes";
 
+    if (CalcHeures.cap(1) == "" || CalcHeures.cap(1) == "0"){
+        contenuTempsPrep << CalcMinutes.cap(1) + " minutes";
+    }
+    else {
+      contenuTempsPrep << CalcHeures.cap(1) + " heures et " + CalcMinutes.cap(1) + " minutes";
+    }
     tempsTotalHeures = (CalcHeures.cap(1)).toInt();
     tempsTotalMinutes = (CalcMinutes.cap(1)).toInt();
 
     CalcMinutes.indexIn(tempsCuisson);
     CalcHeures.indexIn(tempsCuisson);
-    contenuTempsCuisson << CalcHeures.cap(1) + " heures et " + CalcMinutes.cap(1) + " minutes";
 
+    if (CalcHeures.cap(1) == "" || CalcHeures.cap(1) == "0"){
+        contenuTempsCuisson << CalcMinutes.cap(1) + " minutes";
+    }
+    else {
+        contenuTempsCuisson << CalcHeures.cap(1) + " heures et " + CalcMinutes.cap(1) + " minutes";
+    }
     tempsTotalHeures += (CalcHeures.cap(1)).toInt();
     tempsTotalMinutes += (CalcMinutes.cap(1)).toInt();
+    if (tempsTotalHeures == 0){
+
+    contenuTempsTotal << QString::number(tempsTotalMinutes) + " minutes";
+
+    }
+    else {
     contenuTempsTotal << QString::number(tempsTotalHeures) + " heures et " + QString::number(tempsTotalMinutes) + " minutes";
+
+    }
 }
