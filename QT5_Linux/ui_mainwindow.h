@@ -112,7 +112,7 @@ public:
         labelMsgBvn = new QLabel(centralwidget);
         labelMsgBvn->setObjectName(QStringLiteral("labelMsgBvn"));
         labelMsgBvn->setEnabled(true);
-        labelMsgBvn->setGeometry(QRect(70, 30, 660, 60));
+        labelMsgBvn->setGeometry(QRect(0, 30, 800, 60));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
