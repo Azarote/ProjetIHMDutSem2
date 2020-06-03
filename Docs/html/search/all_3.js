@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['help',['Help',['../class_main_window.html#a25ec89113c14218717cfade9a58f8fdb',1,'MainWindow']]]
+  ['fenetreetapes',['FenetreEtapes',['../class_ui_1_1_fenetre_etapes.html',1,'Ui']]],
+  ['fenetrepresentation',['FenetrePresentation',['../class_ui_1_1_fenetre_presentation.html',1,'Ui']]]
 ];

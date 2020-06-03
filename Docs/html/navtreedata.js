@@ -1,7 +1,6 @@
 var NAVTREE =
 [
   [ "Lecteur de Recettes", "index.html", [
-    [ "Liste des bogues", "bug.html", null ],
     [ "Espaces de nommage", null, [
       [ "Liste des espaces de nommage", "namespaces.html", "namespaces" ]
     ] ],
@@ -11,7 +10,8 @@ var NAVTREE =
       [ "Hiérarchie des classes", "hierarchy.html", "hierarchy" ],
       [ "Membres de classe", "functions.html", [
         [ "Tout", "functions.html", null ],
-        [ "Fonctions", "functions_func.html", null ]
+        [ "Fonctions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Fichiers", null, [
