@@ -55,13 +55,6 @@ private:
     QWidget *WidgetEtape, *WidgetPresentation, *WidgetApropos;
 
     /**
-     * \fn MenuPrincpal
-     * \brief Fonction qui paramètre le titre de la fenêtre principale
-     *
-     */
-    void MenuPrincipal();
-
-    /**
      * \fn MenuFichier
      * \brief Fonction qui propose des options lorsque l'on clique sur l'onglet Fichier du menu
      *
