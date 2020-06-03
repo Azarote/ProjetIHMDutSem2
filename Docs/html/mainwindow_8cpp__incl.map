@@ -1,4 +1,4 @@
-<map id="mainwindow.cpp" name="mainwindow.cpp">
+<map id="LecteurRecette/mainwindow.cpp" name="LecteurRecette/mainwindow.cpp">
 <area shape="rect" id="node2" href="$mainwindow_8h.html" title="Classe des différentes fenêtre. " alt="" coords="844,80,949,107"/>
 <area shape="rect" id="node11" href="$temps_8h.html" title="Traitement donnée du programme. " alt="" coords="191,155,261,181"/>
 <area shape="rect" id="node3" href="$lecteurjson_8h.html" title="Récupération des éléments souhaiter dans le JSON. " alt="" coords="318,229,414,256"/>

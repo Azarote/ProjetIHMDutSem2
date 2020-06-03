@@ -1,17 +1,17 @@
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
-{text:"Related Pages",url:"pages.html"},
-{text:"Namespaces",url:"namespaces.html",children:[
-{text:"Namespace List",url:"namespaces.html"}]},
+{text:"Page principale",url:"index.html"},
+{text:"Pages associées",url:"pages.html"},
+{text:"Espaces de nommage",url:"namespaces.html",children:[
+{text:"Liste des espaces de nommage",url:"namespaces.html"}]},
 {text:"Classes",url:"annotated.html",children:[
-{text:"Class List",url:"annotated.html"},
-{text:"Class Index",url:"classes.html"},
-{text:"Class Hierarchy",url:"inherits.html"},
-{text:"Class Members",url:"functions.html",children:[
-{text:"All",url:"functions.html"},
-{text:"Functions",url:"functions_func.html"}]}]},
-{text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"},
-{text:"File Members",url:"globals.html",children:[
-{text:"All",url:"globals.html"},
-{text:"Functions",url:"globals_func.html"}]}]}]}
+{text:"Liste des classes",url:"annotated.html"},
+{text:"Index des classes",url:"classes.html"},
+{text:"Hiérarchie des classes",url:"inherits.html"},
+{text:"Membres de classe",url:"functions.html",children:[
+{text:"Tout",url:"functions.html"},
+{text:"Fonctions",url:"functions_func.html"}]}]},
+{text:"Fichiers",url:"files.html",children:[
+{text:"Liste des fichiers",url:"files.html"},
+{text:"Membres de fichier",url:"globals.html",children:[
+{text:"Tout",url:"globals.html"},
+{text:"Fonctions",url:"globals_func.html"}]}]}]}

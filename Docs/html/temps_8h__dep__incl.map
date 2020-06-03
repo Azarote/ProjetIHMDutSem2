@@ -1,6 +1,6 @@
-<map id="temps.h" name="temps.h">
-<area shape="rect" id="node2" href="$mainwindow_8h.html" title="Classe des différentes fenêtre. " alt="" coords="132,80,237,107"/>
-<area shape="rect" id="node4" href="$mainwindow_8cpp.html" title="Programme qui gère tout l&#39;affichage. " alt="" coords="5,155,124,181"/>
-<area shape="rect" id="node5" href="$temps_8cpp.html" title="Programme qui s&#39;occupe du traitement du temps. " alt="" coords="246,155,329,181"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="Programme principal. " alt="" coords="147,155,222,181"/>
+<map id="LecteurRecette/temps.h" name="LecteurRecette/temps.h">
+<area shape="rect" id="node2" href="$mainwindow_8h.html" title="Classe des différentes fenêtre. " alt="" coords="227,80,425,107"/>
+<area shape="rect" id="node4" href="$mainwindow_8cpp.html" title="Programme qui gère tout l&#39;affichage. " alt="" coords="5,155,217,181"/>
+<area shape="rect" id="node5" href="$temps_8cpp.html" title="Programme qui s&#39;occupe du traitement du temps. " alt="" coords="434,155,610,181"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="Programme principal. " alt="" coords="242,155,410,181"/>
 </map>
