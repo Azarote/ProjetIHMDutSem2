@@ -2,7 +2,6 @@
  * \file mainwindow.cpp
  * \author Munoz Matteo - Dufour Mattéo
  *
- * \bug Application plante quand ouverture fichier avec autre extension (need to catch the error)
  * \brief Programme qui gère tout l'affichage
  *
  */

@@ -100,37 +100,39 @@ public:
      void MachineEtats();
 
      /*!
-      * \brief Afficher Fenêtre
+      * \fn AfficherFenetre
       *
-      * Fonction Qui affichee les fenêtres après lecture du JSON.
+      *
+      * \brief Fonction Qui affichee les fenêtres après lecture du JSON.
       */
      void AfficherFenetre();
 
      /*!
-      *  \brief Afficher Présentation
+      * \fn AfficherPresentation
       *
-      *  Affiche le texte dans la fenêtre présentation après lecture du JSON.
+      *
+      *  \brief Affiche le texte dans la fenêtre présentation après lecture du JSON.
       */
     void AfficherPresentation();
 
      /*!
-      *  \brief Afficher Ingrédient
+      * \fn Afficher Ingrédient
       *
-      *  Affiche les ingédients dans la fenêtre Ingredient après lecture du JSON
+      * \brief Affiche les ingédients dans la fenêtre Ingredient après lecture du JSON
       */
      void AfficherIngredient();
 
      /*!
-      *  \brief Afficher temps
+      * \fn Afficher temps
       *
-      *  Affiche le temp après traitement.
+      * \brief Affiche le temp après traitement.
       */
      void AfficherTemps();
 
      /*!
       *  \brief Destructeur
       *
-      *  Destructeur de la classe MainWindow
+      * \brief Destructeur de la classe MainWindow
       */
     ~MainWindow();
 
