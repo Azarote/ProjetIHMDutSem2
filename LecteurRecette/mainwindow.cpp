@@ -52,14 +52,14 @@ void MainWindow::Lancementlecture(QString nomFichier)
 
 void MainWindow::AfficherFenetre()
 {
-    presentation.setupUi(WidgetPresentation); //Paramètre l'UI
-    WidgetPresentation->show(); //Affiche la fenêtre "Présentation de la recette"
-    WidgetPresentation->setFixedSize(QSize(800, 600)); //Empêche de redimensionner la fenêtre
-
     etapes.setupUi(WidgetEtape); //Paramètre l'UI
     etapes.label->hide();
     WidgetEtape->show(); //Affiche la fenêtre "Étapes de réalisation"
     WidgetEtape->setFixedSize(QSize(800, 600)); //Empêche de redimensionner la fenêtre
+
+    presentation.setupUi(WidgetPresentation); //Paramètre l'UI
+    WidgetPresentation->show(); //Affiche la fenêtre "Présentation de la recette"
+    WidgetPresentation->setFixedSize(QSize(800, 600)); //Empêche de redimensionner la fenêtre
 }
 
 void MainWindow::AfficherPresentation()
