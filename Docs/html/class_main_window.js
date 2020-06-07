@@ -9,8 +9,21 @@ var class_main_window =
     [ "AfficherTemps", "class_main_window.html#a33811a52abf8f1ce71ec4e150d9c9ac8", null ],
     [ "cheminFichier", "class_main_window.html#a397116dafcb548fec351091cc025b822", null ],
     [ "ClearLabel", "class_main_window.html#a9a0c33e6e696ffc763560205f992650d", null ],
+    [ "dragEnterEvent", "class_main_window.html#ada907d7d00283f37f6876e28f5a7874e", null ],
+    [ "dropEvent", "class_main_window.html#a98b2946862365ec3a20677e67a938ea0", null ],
     [ "Help", "class_main_window.html#a25ec89113c14218717cfade9a58f8fdb", null ],
     [ "Lancementlecture", "class_main_window.html#ac368dfd7e2609f0cb72fc1428771aa97", null ],
     [ "MachineEtats", "class_main_window.html#a59cd9a83e43405ae1ad5c18e79b04db5", null ],
-    [ "Ouvrir", "class_main_window.html#a37a30280ba05a52445ecbea9deaa5385", null ]
+    [ "MenuAide", "class_main_window.html#aca604490b4fa5077638a5245bee9e706", null ],
+    [ "MenuFichier", "class_main_window.html#ace494e8ee2d76a6dbd390dc48b9c986c", null ],
+    [ "Ouvrir", "class_main_window.html#a37a30280ba05a52445ecbea9deaa5385", null ],
+    [ "etapes", "class_main_window.html#aee806e7be315f0cc67e8e7cd19f7d651", null ],
+    [ "Json", "class_main_window.html#a9db0843494679d79521b63ca3b6f3f7e", null ],
+    [ "MachineEtapes", "class_main_window.html#ae4e608b1c0ba194f1e1a1e09905182e2", null ],
+    [ "presentation", "class_main_window.html#a12b3703287f602303f92ced702c2b88f", null ],
+    [ "Trait", "class_main_window.html#a1dfb1b1b22d99fccae16abadec84523f", null ],
+    [ "ui", "class_main_window.html#a35466a70ed47252a0191168126a352a5", null ],
+    [ "WidgetApropos", "class_main_window.html#a8a1bf5356fafc93d0b6560427fd022e2", null ],
+    [ "WidgetEtape", "class_main_window.html#a8463ff15a4d0c60daf94ef4555710e9b", null ],
+    [ "WidgetPresentation", "class_main_window.html#af897497296009c9ed94c40d7785bb847", null ]
 ];

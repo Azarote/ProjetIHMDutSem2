@@ -26,7 +26,7 @@ Graphe de collaboration de Main\+Window\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=160pt]{class_main_window__coll__graph}
+\includegraphics[width=350pt]{class_main_window__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Connecteurs publics}
@@ -64,6 +64,38 @@ void \hyperlink{class_main_window_a33811a52abf8f1ce71ec4e150d9c9ac8}{Afficher\+T
 \item 
 \hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
 \begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_ace494e8ee2d76a6dbd390dc48b9c986c}{Menu\+Fichier} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui propose des options lorsque l\textquotesingle{}on clique sur l\textquotesingle{}onglet Fichier du menu. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_aca604490b4fa5077638a5245bee9e706}{Menu\+Aide} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui ajoute un onglet \char`\"{}à propos\char`\"{} au menu. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ada907d7d00283f37f6876e28f5a7874e}{drag\+Enter\+Event} (Q\+Drag\+Enter\+Event $\ast$)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de déposer un fichier au survol de l\textquotesingle{}application. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a98b2946862365ec3a20677e67a938ea0}{drop\+Event} (Q\+Drop\+Event $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ui_1_1_main_window}{Ui\+::\+Main\+Window} $\ast$ \hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}
+\item 
+\hyperlink{class_ui_1_1_fenetre_presentation}{Ui\+::\+Fenetre\+Presentation} \hyperlink{class_main_window_a12b3703287f602303f92ced702c2b88f}{presentation}
+\item 
+\hyperlink{class_ui_1_1_fenetre_etapes}{Ui\+::\+Fenetre\+Etapes} \hyperlink{class_main_window_aee806e7be315f0cc67e8e7cd19f7d651}{etapes}
+\item 
+\hyperlink{class_lecteur_json}{Lecteur\+Json} \hyperlink{class_main_window_a9db0843494679d79521b63ca3b6f3f7e}{Json}
+\item 
+\hyperlink{classtraitement}{traitement} \hyperlink{class_main_window_a1dfb1b1b22d99fccae16abadec84523f}{Trait}
+\item 
+Q\+State\+Machine $\ast$ \hyperlink{class_main_window_ae4e608b1c0ba194f1e1a1e09905182e2}{Machine\+Etapes}
+\item 
+Q\+Widget $\ast$ \hyperlink{class_main_window_a8463ff15a4d0c60daf94ef4555710e9b}{Widget\+Etape}
+\item 
+Q\+Widget $\ast$ \hyperlink{class_main_window_af897497296009c9ed94c40d7785bb847}{Widget\+Presentation}
+\item 
+Q\+Widget $\ast$ \hyperlink{class_main_window_a8a1bf5356fafc93d0b6560427fd022e2}{Widget\+Apropos}
+\end{DoxyCompactItemize}
 
 
 \subsection{Description détaillée}
@@ -171,6 +203,27 @@ Signal qui clear les numéro des étapes.
 \begin{DoxySeeAlso}{Voir également}
 signal \hyperlink{class_main_window_a9a0c33e6e696ffc763560205f992650d}{Clear\+Label} 
 \end{DoxySeeAlso}
+\mbox{\Hypertarget{class_main_window_ada907d7d00283f37f6876e28f5a7874e}\label{class_main_window_ada907d7d00283f37f6876e28f5a7874e}} 
+\index{Main\+Window@{Main\+Window}!drag\+Enter\+Event@{drag\+Enter\+Event}}
+\index{drag\+Enter\+Event@{drag\+Enter\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{drag\+Enter\+Event()}{dragEnterEvent()}}
+{\footnotesize\ttfamily Main\+Window\+::drag\+Enter\+Event (\begin{DoxyParamCaption}\item[{Q\+Drag\+Enter\+Event $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fonction qui permet de déposer un fichier au survol de l\textquotesingle{}application. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Pointeur} & sur Q\+Drag\+Enter\+Event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a98b2946862365ec3a20677e67a938ea0}\label{class_main_window_a98b2946862365ec3a20677e67a938ea0}} 
+\index{Main\+Window@{Main\+Window}!drop\+Event@{drop\+Event}}
+\index{drop\+Event@{drop\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{drop\+Event()}{dropEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::drop\+Event (\begin{DoxyParamCaption}\item[{Q\+Drop\+Event $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_main_window_a25ec89113c14218717cfade9a58f8fdb}\label{class_main_window_a25ec89113c14218717cfade9a58f8fdb}} 
 \index{Main\+Window@{Main\+Window}!Help@{Help}}
 \index{Help@{Help}!Main\+Window@{Main\+Window}}
@@ -202,6 +255,26 @@ Fonction qui appelle la fonction qui traite le json + affiche toutes les informa
 \subsubsection{\texorpdfstring{Machine\+Etats()}{MachineEtats()}}
 {\footnotesize\ttfamily void Main\+Window\+::\+Machine\+Etats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_main_window_aca604490b4fa5077638a5245bee9e706}\label{class_main_window_aca604490b4fa5077638a5245bee9e706}} 
+\index{Main\+Window@{Main\+Window}!Menu\+Aide@{Menu\+Aide}}
+\index{Menu\+Aide@{Menu\+Aide}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Menu\+Aide()}{MenuAide()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Menu\+Aide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fonction qui ajoute un onglet \char`\"{}à propos\char`\"{} au menu. 
+
+\mbox{\Hypertarget{class_main_window_ace494e8ee2d76a6dbd390dc48b9c986c}\label{class_main_window_ace494e8ee2d76a6dbd390dc48b9c986c}} 
+\index{Main\+Window@{Main\+Window}!Menu\+Fichier@{Menu\+Fichier}}
+\index{Menu\+Fichier@{Menu\+Fichier}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Menu\+Fichier()}{MenuFichier()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Menu\+Fichier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fonction qui propose des options lorsque l\textquotesingle{}on clique sur l\textquotesingle{}onglet Fichier du menu. 
+
 \mbox{\Hypertarget{class_main_window_a37a30280ba05a52445ecbea9deaa5385}\label{class_main_window_a37a30280ba05a52445ecbea9deaa5385}} 
 \index{Main\+Window@{Main\+Window}!Ouvrir@{Ouvrir}}
 \index{Ouvrir@{Ouvrir}!Main\+Window@{Main\+Window}}
@@ -217,6 +290,63 @@ Fonction qui permet d\textquotesingle{}ouvrir un fichier sur la fenêtre.
 {\em Qstring} & qui contient le chemin du fichier. \\
 \hline
 \end{DoxyParams}
+
+
+\subsection{Documentation des données membres}
+\mbox{\Hypertarget{class_main_window_aee806e7be315f0cc67e8e7cd19f7d651}\label{class_main_window_aee806e7be315f0cc67e8e7cd19f7d651}} 
+\index{Main\+Window@{Main\+Window}!etapes@{etapes}}
+\index{etapes@{etapes}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{etapes}{etapes}}
+{\footnotesize\ttfamily \hyperlink{class_ui_1_1_fenetre_etapes}{Ui\+::\+Fenetre\+Etapes} Main\+Window\+::etapes\hspace{0.3cm}{\ttfamily [private]}}
+
+\hyperlink{class_ui_1_1_fenetre_etapes}{Ui\+::\+Fenetre\+Etapes} contenant l\textquotesingle{}UI etapes \mbox{\Hypertarget{class_main_window_a9db0843494679d79521b63ca3b6f3f7e}\label{class_main_window_a9db0843494679d79521b63ca3b6f3f7e}} 
+\index{Main\+Window@{Main\+Window}!Json@{Json}}
+\index{Json@{Json}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Json}{Json}}
+{\footnotesize\ttfamily \hyperlink{class_lecteur_json}{Lecteur\+Json} Main\+Window\+::\+Json\hspace{0.3cm}{\ttfamily [private]}}
+
+Instance de la classe \hyperlink{class_lecteur_json}{Lecteur\+Json} \mbox{\Hypertarget{class_main_window_ae4e608b1c0ba194f1e1a1e09905182e2}\label{class_main_window_ae4e608b1c0ba194f1e1a1e09905182e2}} 
+\index{Main\+Window@{Main\+Window}!Machine\+Etapes@{Machine\+Etapes}}
+\index{Machine\+Etapes@{Machine\+Etapes}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Machine\+Etapes}{MachineEtapes}}
+{\footnotesize\ttfamily Q\+State\+Machine$\ast$ Main\+Window\+::\+Machine\+Etapes\hspace{0.3cm}{\ttfamily [private]}}
+
+Q\+State\+Machine contenant une machine à états \mbox{\Hypertarget{class_main_window_a12b3703287f602303f92ced702c2b88f}\label{class_main_window_a12b3703287f602303f92ced702c2b88f}} 
+\index{Main\+Window@{Main\+Window}!presentation@{presentation}}
+\index{presentation@{presentation}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{presentation}{presentation}}
+{\footnotesize\ttfamily \hyperlink{class_ui_1_1_fenetre_presentation}{Ui\+::\+Fenetre\+Presentation} Main\+Window\+::presentation\hspace{0.3cm}{\ttfamily [private]}}
+
+\hyperlink{class_ui_1_1_fenetre_presentation}{Ui\+::\+Fenetre\+Presentation} contenant l\textquotesingle{}UI présentation \mbox{\Hypertarget{class_main_window_a1dfb1b1b22d99fccae16abadec84523f}\label{class_main_window_a1dfb1b1b22d99fccae16abadec84523f}} 
+\index{Main\+Window@{Main\+Window}!Trait@{Trait}}
+\index{Trait@{Trait}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Trait}{Trait}}
+{\footnotesize\ttfamily \hyperlink{classtraitement}{traitement} Main\+Window\+::\+Trait\hspace{0.3cm}{\ttfamily [private]}}
+
+Instance de la classe traitement \mbox{\Hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}\label{class_main_window_a35466a70ed47252a0191168126a352a5}} 
+\index{Main\+Window@{Main\+Window}!ui@{ui}}
+\index{ui@{ui}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \hyperlink{class_ui_1_1_main_window}{Ui\+::\+Main\+Window}$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+\hyperlink{class_ui_1_1_main_window}{Ui\+::\+Main\+Window} contenant l\textquotesingle{}UI \mbox{\Hypertarget{class_main_window_a8a1bf5356fafc93d0b6560427fd022e2}\label{class_main_window_a8a1bf5356fafc93d0b6560427fd022e2}} 
+\index{Main\+Window@{Main\+Window}!Widget\+Apropos@{Widget\+Apropos}}
+\index{Widget\+Apropos@{Widget\+Apropos}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Widget\+Apropos}{WidgetApropos}}
+{\footnotesize\ttfamily Q\+Widget $\ast$ Main\+Window\+::\+Widget\+Apropos\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a8463ff15a4d0c60daf94ef4555710e9b}\label{class_main_window_a8463ff15a4d0c60daf94ef4555710e9b}} 
+\index{Main\+Window@{Main\+Window}!Widget\+Etape@{Widget\+Etape}}
+\index{Widget\+Etape@{Widget\+Etape}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Widget\+Etape}{WidgetEtape}}
+{\footnotesize\ttfamily Q\+Widget$\ast$ Main\+Window\+::\+Widget\+Etape\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_af897497296009c9ed94c40d7785bb847}\label{class_main_window_af897497296009c9ed94c40d7785bb847}} 
+\index{Main\+Window@{Main\+Window}!Widget\+Presentation@{Widget\+Presentation}}
+\index{Widget\+Presentation@{Widget\+Presentation}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Widget\+Presentation}{WidgetPresentation}}
+{\footnotesize\ttfamily Q\+Widget $\ast$ Main\+Window\+::\+Widget\+Presentation\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}

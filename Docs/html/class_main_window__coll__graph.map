@@ -1,2 +1,10 @@
 <map id="MainWindow" name="MainWindow">
+<area shape="rect" id="node3" href="$class_lecteur_json.html" title="Classe qui permet la lecture d&#39;un fichier JSON. " alt="" coords="247,56,340,83"/>
+<area shape="rect" id="node4" href="$class_ui_1_1_main_window.html" title="Ui::MainWindow" alt="" coords="234,107,353,133"/>
+<area shape="rect" id="node5" href="$class_ui___main_window.html" title="Ui_MainWindow" alt="" coords="26,107,143,133"/>
+<area shape="rect" id="node6" href="$classtraitement.html" title="classe permettant le traitement du temps du fichier JSon " alt="" coords="253,157,333,184"/>
+<area shape="rect" id="node7" href="$class_ui_1_1_fenetre_etapes.html" title="Ui::FenetreEtapes" alt="" coords="229,208,357,235"/>
+<area shape="rect" id="node8" href="$class_ui___fenetre_etapes.html" title="Ui_FenetreEtapes" alt="" coords="21,208,148,235"/>
+<area shape="rect" id="node9" href="$class_ui_1_1_fenetre_presentation.html" title="Ui::FenetrePresentation" alt="" coords="213,259,373,285"/>
+<area shape="rect" id="node10" href="$class_ui___fenetre_presentation.html" title="Ui_FenetrePresentation" alt="" coords="5,259,164,285"/>
 </map>
