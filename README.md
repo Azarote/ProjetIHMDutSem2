@@ -18,3 +18,7 @@ Il y a également des fichiers d'exemple au format Json de recettes dans le doss
 Le dossier "Docs" contient la documentation Doxygen, et le fichier Doxyfile à la racine du projet sert à la générer grâce à la commande "doxygen Doxyfile".
 
 Il y a également une documentation générale à la racine qui contient notamment les diagrammes.
+
+# Copyright & License
+
+Tous droits réservés à DUFOUR Mattéo, MUNOZ Matteo.
