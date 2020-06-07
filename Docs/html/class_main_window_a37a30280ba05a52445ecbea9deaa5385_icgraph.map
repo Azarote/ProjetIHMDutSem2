@@ -1,0 +1,5 @@
+<map id="MainWindow::Ouvrir" name="MainWindow::Ouvrir">
+<area shape="rect" id="node2" href="$class_main_window.html#ace494e8ee2d76a6dbd390dc48b9c986c" title="Fonction qui propose des options lorsque l&#39;on clique sur l&#39;onglet Fichier du menu. " alt="" coords="193,5,369,32"/>
+<area shape="rect" id="node4" href="$class_main_window.html#a98b2946862365ec3a20677e67a938ea0" title="MainWindow::dropEvent" alt="" coords="199,56,363,83"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Constructeur de la classe MainWindow. " alt="" coords="417,5,597,32"/>
+</map>

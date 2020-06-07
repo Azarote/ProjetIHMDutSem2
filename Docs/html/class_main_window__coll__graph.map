@@ -1,10 +1,10 @@
 <map id="MainWindow" name="MainWindow">
-<area shape="rect" id="node3" href="$class_lecteur_json.html" title="Classe qui permet la lecture d&#39;un fichier JSON. " alt="" coords="247,56,340,83"/>
-<area shape="rect" id="node4" href="$class_ui_1_1_main_window.html" title="Ui::MainWindow" alt="" coords="234,107,353,133"/>
-<area shape="rect" id="node5" href="$class_ui___main_window.html" title="Ui_MainWindow" alt="" coords="26,107,143,133"/>
-<area shape="rect" id="node6" href="$classtraitement.html" title="classe permettant le traitement du temps du fichier JSon " alt="" coords="253,157,333,184"/>
-<area shape="rect" id="node7" href="$class_ui_1_1_fenetre_etapes.html" title="Ui::FenetreEtapes" alt="" coords="229,208,357,235"/>
-<area shape="rect" id="node8" href="$class_ui___fenetre_etapes.html" title="Ui_FenetreEtapes" alt="" coords="21,208,148,235"/>
-<area shape="rect" id="node9" href="$class_ui_1_1_fenetre_presentation.html" title="Ui::FenetrePresentation" alt="" coords="213,259,373,285"/>
-<area shape="rect" id="node10" href="$class_ui___fenetre_presentation.html" title="Ui_FenetrePresentation" alt="" coords="5,259,164,285"/>
+<area shape="rect" id="node3" href="$class_lecteur_json.html" title="Classe qui permet la lecture d&#39;un fichier JSON. " alt="" coords="137,323,279,547"/>
+<area shape="rect" id="node4" href="$class_ui_1_1_main_window.html" title="{Ui::MainWindow\n||}" alt="" coords="303,396,422,473"/>
+<area shape="rect" id="node5" href="$class_ui___main_window.html" title="{Ui_MainWindow\n|+ centralwidget\l+ ImageDragNDrop\l+ labelMsgBvn\l+ labelAuteurs\l+ label_2\l+ menubar\l+ statusbar\l|+ setupUi()\l+ retranslateUi()\l}" alt="" coords="295,49,431,229"/>
+<area shape="rect" id="node6" href="$classtraitement.html" title="classe permettant le traitement du temps du fichier JSon " alt="" coords="446,396,586,473"/>
+<area shape="rect" id="node7" href="$class_ui_1_1_fenetre_etapes.html" title="{Ui::FenetreEtapes\n||}" alt="" coords="611,396,739,473"/>
+<area shape="rect" id="node8" href="$class_ui___fenetre_etapes.html" title="{Ui_FenetreEtapes\n|+ btnPrecedent\l+ btnSuivant\l+ labelTpsCuisson\l+ labelTpsPreparation\l+ contenuURL\l+ labelTpsTotal\l+ contenuEtapes\l+ label\l+ label_2\l+ contenuTempsCuisson\l+ contenuTempsTotal\l+ contenuTempsPrep\l|+ setupUi()\l+ retranslateUi()\l}" alt="" coords="584,13,752,266"/>
+<area shape="rect" id="node9" href="$class_ui_1_1_fenetre_presentation.html" title="{Ui::FenetrePresentation\n||}" alt="" coords="775,396,935,473"/>
+<area shape="rect" id="node10" href="$class_ui___fenetre_presentation.html" title="{Ui_FenetrePresentation\n|+ Onglets\l+ ongletPresentation\l+ contenuPresentation\l+ ongletIngredients\l+ msgIngredients\l+ contenuIngredients\l+ labelTpsPreparation\l+ labelTpsCuisson\l+ labelTpsTotal\l+ contenuTempsPrep\l+ contenuURL\l+ contenuTempsCuisson\l+ contenuTempsTotal\l|+ setupUi()\l+ retranslateUi()\l}" alt="" coords="776,5,944,273"/>
 </map>

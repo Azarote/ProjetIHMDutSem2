@@ -1,0 +1,6 @@
+<map id="MainWindow::MachineEtats" name="MainWindow::MachineEtats">
+<area shape="rect" id="node2" href="$class_lecteur_json.html#ab698142bf586bb224c35962525ce3915" title="LecteurJson::getEtapes" alt="" coords="260,5,420,32"/>
+<area shape="rect" id="node3" href="$class_lecteur_json.html#ad3a86b8dc577d1e6d77a66b8ece8442a" title="LecteurJson::getUpdateEtapes" alt="" coords="239,56,441,83"/>
+<area shape="rect" id="node4" href="$class_main_window.html#ae90cd3ee3e8e0b2ddf842514fafd13dc" title="Fonction qui affiche les etapes de la recette. " alt="" coords="248,107,432,133"/>
+<area shape="rect" id="node5" href="$class_lecteur_json.html#a4ceacda970b2b838bb41211decdd799f" title="LecteurJson::getURL" alt="" coords="489,107,636,133"/>
+</map>

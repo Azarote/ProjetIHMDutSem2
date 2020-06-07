@@ -1,0 +1,6 @@
+<map id="Ui_FenetrePresentation::retranslateUi" name="Ui_FenetrePresentation::retranslateUi">
+<area shape="rect" id="node2" href="$class_ui___fenetre_presentation.html#a08e799fcf97f8afe980e76770b4ef960" title="Ui_FenetrePresentation\l::setupUi" alt="" coords="212,5,371,47"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a7f4b9726171670ec8d85bb6b09e0665d" title="Fonction Qui affichee les fenêtres après lecture du JSON. " alt="" coords="419,13,613,39"/>
+<area shape="rect" id="node4" href="$class_main_window.html#ac368dfd7e2609f0cb72fc1428771aa97" title="Fonction qui appelle la fonction qui traite le json + affiche toutes les informations nécessaires..." alt="" coords="661,13,869,39"/>
+<area shape="rect" id="node5" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Constructeur de la classe MainWindow. " alt="" coords="917,13,1097,39"/>
+</map>

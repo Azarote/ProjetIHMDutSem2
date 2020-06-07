@@ -1,0 +1,7 @@
+<map id="LecteurJson::getURL" name="LecteurJson::getURL">
+<area shape="rect" id="node2" href="$class_main_window.html#a9bf06dfcc398454facb39e71ebf32550" title="Affiche le texte dans la fenêtre présentation après lecture du JSON. " alt="" coords="432,5,655,32"/>
+<area shape="rect" id="node5" href="$class_main_window.html#ae90cd3ee3e8e0b2ddf842514fafd13dc" title="Fonction qui affiche les etapes de la recette. " alt="" coords="200,56,384,83"/>
+<area shape="rect" id="node3" href="$class_main_window.html#ac368dfd7e2609f0cb72fc1428771aa97" title="Fonction qui appelle la fonction qui traite le json + affiche toutes les informations nécessaires..." alt="" coords="703,31,911,57"/>
+<area shape="rect" id="node4" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Constructeur de la classe MainWindow. " alt="" coords="959,31,1139,57"/>
+<area shape="rect" id="node6" href="$class_main_window.html#a59cd9a83e43405ae1ad5c18e79b04db5" title="MainWindow::MachineEtats" alt="" coords="451,56,636,83"/>
+</map>

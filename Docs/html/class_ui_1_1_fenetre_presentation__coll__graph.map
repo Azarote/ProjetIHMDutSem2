@@ -1,3 +1,3 @@
 <map id="Ui::FenetrePresentation" name="Ui::FenetrePresentation">
-<area shape="rect" id="node2" href="$class_ui___fenetre_presentation.html" title="Ui_FenetrePresentation" alt="" coords="6,5,165,32"/>
+<area shape="rect" id="node2" href="$class_ui___fenetre_presentation.html" title="{Ui_FenetrePresentation\n|+ Onglets\l+ ongletPresentation\l+ contenuPresentation\l+ ongletIngredients\l+ msgIngredients\l+ contenuIngredients\l+ labelTpsPreparation\l+ labelTpsCuisson\l+ labelTpsTotal\l+ contenuTempsPrep\l+ contenuURL\l+ contenuTempsCuisson\l+ contenuTempsTotal\l|+ setupUi()\l+ retranslateUi()\l}" alt="" coords="5,5,173,273"/>
 </map>

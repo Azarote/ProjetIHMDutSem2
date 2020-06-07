@@ -1,0 +1,5 @@
+<map id="MainWindow::ClearLabel" name="MainWindow::ClearLabel">
+<area shape="rect" id="node2" href="$class_main_window.html#a59cd9a83e43405ae1ad5c18e79b04db5" title="MainWindow::MachineEtats" alt="" coords="220,5,405,32"/>
+<area shape="rect" id="node3" href="$class_main_window.html#ac368dfd7e2609f0cb72fc1428771aa97" title="Fonction qui appelle la fonction qui traite le json + affiche toutes les informations nécessaires..." alt="" coords="453,5,661,32"/>
+<area shape="rect" id="node4" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Constructeur de la classe MainWindow. " alt="" coords="709,5,889,32"/>
+</map>

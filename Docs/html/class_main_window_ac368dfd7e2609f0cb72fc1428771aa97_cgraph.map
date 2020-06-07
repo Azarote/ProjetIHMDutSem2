@@ -1,0 +1,20 @@
+<map id="MainWindow::Lancementlecture" name="MainWindow::Lancementlecture">
+<area shape="rect" id="node2" href="$class_lecteur_json.html#a6b74dbecd8cb87168fb2d36bc1a22f2b" title="Fonction qui extrait les différentes infos du fichier Json. " alt="" coords="301,56,445,83"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a7f4b9726171670ec8d85bb6b09e0665d" title="Fonction Qui affichee les fenêtres après lecture du JSON. " alt="" coords="275,107,470,133"/>
+<area shape="rect" id="node8" href="$class_main_window.html#a59cd9a83e43405ae1ad5c18e79b04db5" title="MainWindow::MachineEtats" alt="" coords="280,199,465,225"/>
+<area shape="rect" id="node13" href="$class_main_window.html#a9bf06dfcc398454facb39e71ebf32550" title="Affiche le texte dans la fenêtre présentation après lecture du JSON. " alt="" coords="261,275,484,301"/>
+<area shape="rect" id="node15" href="$class_main_window.html#ad4059abf16eb904f988371b3791002bf" title="MainWindow::AfficherIngredient" alt="" coords="269,337,476,364"/>
+<area shape="rect" id="node17" href="$class_main_window.html#a33811a52abf8f1ce71ec4e150d9c9ac8" title="MainWindow::AfficherTemps" alt="" coords="277,413,468,440"/>
+<area shape="rect" id="node4" href="$class_ui___fenetre_etapes.html#a5bf35503b72beb223e5a03ea046524a1" title="Ui_FenetreEtapes::setupUi" alt="" coords="543,5,723,32"/>
+<area shape="rect" id="node6" href="$class_ui___fenetre_presentation.html#a08e799fcf97f8afe980e76770b4ef960" title="Ui_FenetrePresentation\l::setupUi" alt="" coords="554,57,713,98"/>
+<area shape="rect" id="node5" href="$class_ui___fenetre_etapes.html#a12b8a73438c7adfe883f9deb6af95426" title="Ui_FenetreEtapes::retranslateUi" alt="" coords="783,5,992,32"/>
+<area shape="rect" id="node7" href="$class_ui___fenetre_presentation.html#a14a00db87b3b4ce5a1e3df9f754e19bb" title="Ui_FenetrePresentation\l::retranslateUi" alt="" coords="808,57,967,98"/>
+<area shape="rect" id="node9" href="$class_lecteur_json.html#ab698142bf586bb224c35962525ce3915" title="LecteurJson::getEtapes" alt="" coords="553,123,713,149"/>
+<area shape="rect" id="node10" href="$class_lecteur_json.html#ad3a86b8dc577d1e6d77a66b8ece8442a" title="LecteurJson::getUpdateEtapes" alt="" coords="532,173,735,200"/>
+<area shape="rect" id="node11" href="$class_main_window.html#ae90cd3ee3e8e0b2ddf842514fafd13dc" title="Fonction qui affiche les etapes de la recette. " alt="" coords="541,224,725,251"/>
+<area shape="rect" id="node12" href="$class_lecteur_json.html#a4ceacda970b2b838bb41211decdd799f" title="LecteurJson::getURL" alt="" coords="814,249,961,276"/>
+<area shape="rect" id="node14" href="$class_lecteur_json.html#a0c507870050e16de3688d310d1f3b65a" title="LecteurJson::getInfosRecette" alt="" coords="536,325,731,352"/>
+<area shape="rect" id="node16" href="$class_lecteur_json.html#a0c18d502de54aea85b4d76f1b2858423" title="LecteurJson::getIngredients" alt="" coords="542,376,725,403"/>
+<area shape="rect" id="node18" href="$classtraitement.html#a2bc46fa58a25e3f3bf87dfc4fd08ebf8" title="traitement::traitementTemps" alt="" coords="540,427,727,453"/>
+<area shape="rect" id="node19" href="$class_lecteur_json.html#a88d73523c1775a8c7001b5abae152740" title="LecteurJson::getTemps" alt="" coords="808,427,967,453"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="MainWindow::AfficherFenetre" name="MainWindow::AfficherFenetre">
+<area shape="rect" id="node2" href="$class_ui___fenetre_etapes.html#a5bf35503b72beb223e5a03ea046524a1" title="Ui_FenetreEtapes::setupUi" alt="" coords="248,5,428,32"/>
+<area shape="rect" id="node4" href="$class_ui___fenetre_presentation.html#a08e799fcf97f8afe980e76770b4ef960" title="Ui_FenetrePresentation\l::setupUi" alt="" coords="259,57,417,98"/>
+<area shape="rect" id="node3" href="$class_ui___fenetre_etapes.html#a12b8a73438c7adfe883f9deb6af95426" title="Ui_FenetreEtapes::retranslateUi" alt="" coords="476,5,685,32"/>
+<area shape="rect" id="node5" href="$class_ui___fenetre_presentation.html#a14a00db87b3b4ce5a1e3df9f754e19bb" title="Ui_FenetrePresentation\l::retranslateUi" alt="" coords="501,57,660,98"/>
+</map>

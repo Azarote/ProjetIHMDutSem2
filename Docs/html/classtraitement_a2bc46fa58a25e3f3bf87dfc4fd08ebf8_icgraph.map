@@ -1,0 +1,5 @@
+<map id="traitement::traitementTemps" name="traitement::traitementTemps">
+<area shape="rect" id="node2" href="$class_main_window.html#a33811a52abf8f1ce71ec4e150d9c9ac8" title="MainWindow::AfficherTemps" alt="" coords="240,5,431,32"/>
+<area shape="rect" id="node3" href="$class_main_window.html#ac368dfd7e2609f0cb72fc1428771aa97" title="Fonction qui appelle la fonction qui traite le json + affiche toutes les informations nécessaires..." alt="" coords="479,5,687,32"/>
+<area shape="rect" id="node4" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Constructeur de la classe MainWindow. " alt="" coords="735,5,915,32"/>
+</map>
