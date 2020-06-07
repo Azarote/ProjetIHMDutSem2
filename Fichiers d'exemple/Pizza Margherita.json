@@ -1,0 +1,11 @@
+{
+	"name":"Pizza Margherita",
+	"description":"Une vraie pizza comme en Italie \u0021",
+	"keywords":"Pizza,Pizza Margherita, Plat,Cuisine Italienne",
+	"prepTime":"PT0H15M",
+	"cookTime":"PT0H15M",
+	"totalTime":"PT0H30M",
+	"recipeIngredient":["500g de farine","250g d'eau","11g de levure sèche de boulanger (ou 20 g de levure fraîche)","4 c à s d'huile d'olive vierge-extra","½ c à c de sucre","¼ c à c de sel (ou moins, selon les goûts)","800g de pulpe de tomates","400g de mozzarella"],
+	"recipeInstructions":["Verser la farine dans un saladier, ajouter le sel et mélanger. Ajouter la levure sèche, le sucre, le sel et mélanger. Creuser un puit au centre, y verser l’eau. Petit à petit, à l’aide d’une fourchette, y incorporer la farine. Pétrir ensuite à la main ou dans un robot-pétrisseur, ajouter l’huile puis continuer à pétrir jusqu’à obtenir une pâte lisse (éventuellement la transférer sur le plan de travail légèrement fariné pour la pétrir plus facilement). La façonner en boule, la mettre dans un grand saladier et couvrir avec un linge propre. Laisser la pâte lever pendant 2 heures. (Elle doit doubler de volume).","Dégazer la pâte sur un plan de travail, la pétrir rapidement à nouveau, puis l’étaler dans un moule à pizza ou sur une plaque de cuisson. Etaler la pâte plus ou moins fine, selon l’épaisseur que vous voulez donner à la pizza. Etaler si possible à la main, la pâte reste plus aérienne. Faire lever la pâte étalée dans le moule pendant encore 1 heure.","Ajouter la sauce tomate en la répartissant avec une petite louche, en laissant 1,5 cm de bord libre tout autour de la pâte. Ajouter la mozzarella préalablement coupée en dés (ou en tranches) et dégorgée.","Faire cuire la pizza à 210°C pendant 10 à 15 minutes. Dès la sortie du four y ajouter quelques feuille de basilic frais et servir."],
+	"url":"https:\/\/www.750g.com\/pizza-margherita-r200618.htm"
+}
